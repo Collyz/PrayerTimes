@@ -1,8 +1,11 @@
 <strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
-    <string id="AppName">PrayerTimes</string>
+    <string id="AppName">Prayer Times</string>
 
-    <string id="prompt">Click the menu button</string>
+    <string id='title'>Prayer Times</string>
 
-    <string id="menu_label_1">Item 1</string>
-    <string id="menu_label_2">Item 2</string>
+    <string id='text_fajr'>Fajr:</string>
+    <string id='text_dhujr'>Dhujr:</string>
+    <string id='text_asr'>Asr:</string>
+    <string id='text_magrib'>Magrib:</string>
+    <string id='text_isha'>Isha:</string>
 </strings>

@@ -8,7 +8,7 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onMenu() as Boolean {
-        WatchUi.pushView(new Rez.Menus.MainMenu(), new PrayerTimesMenuDelegate(), WatchUi.SLIDE_UP);
+        // WatchUi.pushView(new Rez.Menus.MainMenu(), new PrayerTimesMenuDelegate(), WatchUi.SLIDE_UP);
         return true;
     }
 
