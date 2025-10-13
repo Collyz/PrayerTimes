@@ -24,8 +24,8 @@
     font='Gfx.FONT_TINY'
     />
     <label 
-    id='Dhujr' 
-    text='@Strings.text_dhujr'
+    id='Dhuhr' 
+    text='@Strings.text_dhuhr'
     x='20%'
     y='44%'
     font='Gfx.FONT_TINY'

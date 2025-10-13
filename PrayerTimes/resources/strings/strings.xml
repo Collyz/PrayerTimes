@@ -4,7 +4,7 @@
     <string id='title'>Prayer Times</string>
 
     <string id='text_fajr'>Fajr:</string>
-    <string id='text_dhujr'>Dhujr:</string>
+    <string id='text_dhuhr'>Dhujr:</string>
     <string id='text_asr'>Asr:</string>
     <string id='text_magrib'>Magrib:</string>
     <string id='text_isha'>Isha:</string>

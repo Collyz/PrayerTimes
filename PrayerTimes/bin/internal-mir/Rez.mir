@@ -208,8 +208,8 @@ c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B443
             symbol [ rez_cmp_local_text_Fajr %rez_cmp_local_text_Fajr.3 20 16 39 ];
 [ "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen" 22 12 ]
             [ "c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B4433_00_source_Rez_mcgen_14_74_31_8_start" "c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B4433_00_source_Rez_mcgen_14_74_31_8_stop" ]
-            %rez_cmp_local_text_Dhujr.4 = local;
-            symbol [ rez_cmp_local_text_Dhujr %rez_cmp_local_text_Dhujr.4 22 16 40 ];
+            %rez_cmp_local_text_Dhuhr.4 = local;
+            symbol [ rez_cmp_local_text_Dhuhr %rez_cmp_local_text_Dhuhr.4 22 16 40 ];
             symbol [ WatchUi %tmp.133 22 47 54 ];
             %tmp.133 = getm $.Toybox.WatchUi;
             symbol [ Text %tmp.134 22 55 59 ];
@@ -217,7 +217,7 @@ c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B443
             %tmp.135 = newd 5;
             %tmp.137 = const :identifier;
             symbol [ identifier %tmp.137 22 62 72 const ];
-            %tmp.138 = "Dhujr";
+            %tmp.138 = "Dhuhr";
             %tmp.139 = dup %tmp.135;
             %tmp.140 = aputv %tmp.139 %tmp.137 %tmp.138;
             %tmp.142 = const :locX;
@@ -246,8 +246,8 @@ c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B443
             %tmp.162 = getv %tmp.161 :Rez;
             symbol [ Strings %tmp.163 22 154 161 ];
             %tmp.163 = getv %tmp.162 :Strings;
-            symbol [ text_dhujr %tmp.164 22 162 172 ];
-            %tmp.164 = getv %tmp.163 :text_dhujr;
+            symbol [ text_dhuhr %tmp.164 22 162 172 ];
+            %tmp.164 = getv %tmp.163 :text_dhuhr;
             %tmp.165 = dup %tmp.158;
             %tmp.166 = aputv %tmp.165 %tmp.160 %tmp.164;
             %tmp.168 = const :font;
@@ -259,8 +259,8 @@ c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B443
             %tmp.171 = dup %tmp.166;
             %tmp.172 = aputv %tmp.171 %tmp.168 %tmp.170;
             %tmp.131 = newc %tmp.134 (%tmp.172);
-            lputv %rez_cmp_local_text_Dhujr.4 %tmp.131;
-            symbol [ rez_cmp_local_text_Dhujr %rez_cmp_local_text_Dhujr.4 22 16 40 ];
+            lputv %rez_cmp_local_text_Dhuhr.4 %tmp.131;
+            symbol [ rez_cmp_local_text_Dhuhr %rez_cmp_local_text_Dhuhr.4 22 16 40 ];
 [ "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen" 24 12 ]
             [ "c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B4433_00_source_Rez_mcgen_14_74_31_8_start" "c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B4433_00_source_Rez_mcgen_14_74_31_8_stop" ]
             %rez_cmp_local_text_Asr.5 = local;
@@ -443,8 +443,8 @@ c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B443
             symbol [ rez_cmp_local_text_Fajr %tmp.306 30 87 110 ];
             %tmp.307 = dup %tmp.305;
             %tmp.308 = aputv %tmp.307 2 %tmp.306;
-            %tmp.309 = lgetv %rez_cmp_local_text_Dhujr.4;
-            symbol [ rez_cmp_local_text_Dhujr %tmp.309 30 112 136 ];
+            %tmp.309 = lgetv %rez_cmp_local_text_Dhuhr.4;
+            symbol [ rez_cmp_local_text_Dhuhr %tmp.309 30 112 136 ];
             %tmp.310 = dup %tmp.308;
             %tmp.311 = aputv %tmp.310 3 %tmp.309;
             %tmp.312 = lgetv %rez_cmp_local_text_Asr.5;
@@ -539,16 +539,16 @@ c__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_bin_gen_006_B443
         [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 44; ]
         <init> {
         }
-        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 45; @position = 27; initialized = true; @symbol_vardef = [text_dhujr,45,27,37]; @symbol_type<0> = [ResourceId,45,41,51]; ]
-        var text_dhujr as ResourceId;
-        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 46; @position = 27; initialized = true; @symbol_vardef = [text_fajr,46,27,36]; @symbol_type<0> = [ResourceId,46,40,50]; ]
+        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 45; @position = 27; initialized = true; @symbol_vardef = [text_fajr,45,27,36]; @symbol_type<0> = [ResourceId,45,40,50]; ]
         var text_fajr as ResourceId;
-        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 47; @position = 27; initialized = true; @symbol_vardef = [text_magrib,47,27,38]; @symbol_type<0> = [ResourceId,47,42,52]; ]
+        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 46; @position = 27; initialized = true; @symbol_vardef = [text_magrib,46,27,38]; @symbol_type<0> = [ResourceId,46,42,52]; ]
         var text_magrib as ResourceId;
-        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 48; @position = 27; initialized = true; @symbol_vardef = [text_isha,48,27,36]; @symbol_type<0> = [ResourceId,48,40,50]; ]
+        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 47; @position = 27; initialized = true; @symbol_vardef = [text_isha,47,27,36]; @symbol_type<0> = [ResourceId,47,40,50]; ]
         var text_isha as ResourceId;
-        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 49; @position = 27; initialized = true; @symbol_vardef = [title,49,27,32]; @symbol_type<0> = [ResourceId,49,36,46]; ]
+        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 48; @position = 27; initialized = true; @symbol_vardef = [title,48,27,32]; @symbol_type<0> = [ResourceId,48,36,46]; ]
         var title as ResourceId;
+        [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 49; @position = 27; initialized = true; @symbol_vardef = [text_dhuhr,49,27,37]; @symbol_type<0> = [ResourceId,49,41,51]; ]
+        var text_dhuhr as ResourceId;
         [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 50; @position = 27; initialized = true; @symbol_vardef = [text_asr,50,27,35]; @symbol_type<0> = [ResourceId,50,39,49]; ]
         var text_asr as ResourceId;
         [ @file = "c:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 51; @position = 27; initialized = true; @symbol_vardef = [AppName,51,27,34]; @symbol_type<0> = [ResourceId,51,38,48]; ]

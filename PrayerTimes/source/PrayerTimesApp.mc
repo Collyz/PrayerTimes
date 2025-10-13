@@ -1,28 +1,37 @@
 import Toybox.Application;
 import Toybox.Lang;
+import Toybox.Position;
 import Toybox.WatchUi;
 
-var labelKeys as Array<String> = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
+var labelKeys as Array<String> = ["Fajr", "Dhuhr", "Asr", "Magrib", "Isha"];
+var dataObject = new StorageManager();
+// var calc = new PrayerTimesCalculator();
 
 class PrayerTimesApp extends Application.AppBase {
 
-    function initialize() {
+    private var _view as PrayerTimesView;
+
+    function initialize(){
         AppBase.initialize();
+        _view = new PrayerTimesView();
+        dataObject.createKeys(labelKeys);
     }
 
-    // onStart() is called on application start up
-    function onStart(state as Dictionary?) as Void {
+    function onStart(state as Dictionary or Null) as Void {
+        Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPosition));
     }
 
-    // onStop() is called when your application is exiting
-    function onStop(state as Dictionary?) as Void {
+    function onStop(state as Dictionary or Null) as Void {
+        Position.enableLocationEvents(Position.LOCATION_DISABLE, method(:onPosition));
     }
 
-    // Return the initial view of your application here
+    public function onPosition(info as Info) as Void {
+        _view.setPosition(info);
+    }
+
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new PrayerTimesView(), new PrayerTimesDelegate() ];
+        return [_view, new PrayerTimesDelegate(_view)];
     }
-
 }
 
 function getApp() as PrayerTimesApp {
