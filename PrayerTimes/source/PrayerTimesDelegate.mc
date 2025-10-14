@@ -24,6 +24,8 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
         if (keyEvent.getKey() == KEY_ENTER) {
             // self.getUTCOffset();
             // self.makeRequest();
+            count += 1;
+            _view.updateLabel(labelKeys[0], count);
             _view.requestUpdate();
             System.println("reuested update");
         }
