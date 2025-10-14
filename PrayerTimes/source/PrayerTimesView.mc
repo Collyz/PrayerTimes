@@ -42,9 +42,13 @@ class PrayerTimesView extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
+        dc.clear();
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_BLACK);
+        dc.drawCircle(305, 70, 5);
+
+        System.println("called after draw");
         // Call the parent onUpdate function to redraw the layout
-        updateLabels();
-        View.onUpdate(dc);
+        // View.onUpdate(dc);
     }
 
     // Called when this View is removed from the screen. Save the
@@ -59,10 +63,9 @@ class PrayerTimesView extends WatchUi.View {
             var label = labels[i];
             var prayerText = labelKeys[i];
             var timeText = dataObject.getValue(labelKeys[i]);
-            System.println(prayerText);
-            System.println(timeText);
             label.setText(prayerText + ": " + timeText);
         }
+        WatchUi.requestUpdate();
     }
 
     //! Update a single label
@@ -90,6 +93,11 @@ class PrayerTimesView extends WatchUi.View {
         //     updateLabel(labelKeys[3], times[:maghrib]);
         //     updateLabel(labelKeys[4], times[:isha]);
         // }
+
+        var position = info.position;
+        if (position != null){
+
+        }
     }
 
 }

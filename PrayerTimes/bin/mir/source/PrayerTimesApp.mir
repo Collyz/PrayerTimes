@@ -150,7 +150,7 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTim
     %tmp.12 = "Asr";
     %tmp.13 = dup %tmp.11;
     %tmp.14 = aputv %tmp.13 2 %tmp.12;
-    %tmp.15 = "Magrib";
+    %tmp.15 = "Maghrib";
     %tmp.16 = dup %tmp.14;
     %tmp.17 = aputv %tmp.16 3 %tmp.15;
     %tmp.18 = "Isha";

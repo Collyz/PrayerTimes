@@ -38,8 +38,8 @@
     font='Gfx.FONT_TINY'
     />
     <label 
-    id='Magrib' 
-    text='@Strings.text_magrib'
+    id='Maghrib' 
+    text='@Strings.text_maghrib'
     x='20%'
     y='68%'
     font='Gfx.FONT_TINY'
@@ -51,5 +51,8 @@
     y='80%'
     font='Gfx.FONT_TINY'
     />
+
+    <!-- <drawable id="gpsCircle" ></drawable> -->
+
 
 </layout>

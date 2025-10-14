@@ -3,7 +3,7 @@ import Toybox.Lang;
 import Toybox.Position;
 import Toybox.WatchUi;
 
-var labelKeys as Array<String> = ["Fajr", "Dhuhr", "Asr", "Magrib", "Isha"];
+var labelKeys as Array<String> = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
 var dataObject = new StorageManager();
 // var calc = new PrayerTimesCalculator();
 

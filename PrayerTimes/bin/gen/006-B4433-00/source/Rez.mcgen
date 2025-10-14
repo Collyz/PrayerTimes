@@ -8,6 +8,30 @@ module Rez {
     module Drawables {
         (:initialized) var title_underline as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
+
+        class shapes extends WatchUi.Drawable {
+
+            function initialize() {
+                Drawable.initialize({});
+            }
+
+            function draw(dc as Graphics.Dc) as Void {
+                if (self has :isVisible) {
+                    if (!self.isVisible) {
+                        return;
+                    }
+                }
+
+                dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
+                dc.fillRectangle((0 + 0), (0 + 0), (390 - 0), (390 - 0));
+                dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
+
+                dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+                dc.fillCircle(((0 + 0) + 78), ((0 + 0) + 160), (8 - 0));
+                dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+                dc.fillRectangle(((0 + 0) + 51) + 0, ((0 + 0) + 137) + 0, 76 - (2 * 0), 20 - (2 * 0));
+            }
+        }
     } // Drawables
 
     module Layouts {
@@ -23,11 +47,11 @@ module Rez {
 
             var rez_cmp_local_text_Asr = new WatchUi.Text({:identifier=>"Asr", :locX=>(390 * (20 / 100.0)), :locY=>(390 * (56 / 100.0)), :text=>$.Rez.Strings.text_asr, :font=>Gfx.FONT_TINY});
 
-            var rez_cmp_local_text_Magrib = new WatchUi.Text({:identifier=>"Magrib", :locX=>(390 * (20 / 100.0)), :locY=>(390 * (68 / 100.0)), :text=>$.Rez.Strings.text_magrib, :font=>Gfx.FONT_TINY});
+            var rez_cmp_local_text_Maghrib = new WatchUi.Text({:identifier=>"Maghrib", :locX=>(390 * (20 / 100.0)), :locY=>(390 * (68 / 100.0)), :text=>$.Rez.Strings.text_maghrib, :font=>Gfx.FONT_TINY});
 
             var rez_cmp_local_text_Isha = new WatchUi.Text({:identifier=>"Isha", :locX=>(390 * (20 / 100.0)), :locY=>(390 * (80 / 100.0)), :text=>$.Rez.Strings.text_isha, :font=>Gfx.FONT_TINY});
 
-            return [rez_cmp_local_text_AppTitle, rez_cmp_local_bitmap_title_underline, rez_cmp_local_text_Fajr, rez_cmp_local_text_Dhuhr, rez_cmp_local_text_Asr, rez_cmp_local_text_Magrib, rez_cmp_local_text_Isha] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_text_AppTitle, rez_cmp_local_bitmap_title_underline, rez_cmp_local_text_Fajr, rez_cmp_local_text_Dhuhr, rez_cmp_local_text_Asr, rez_cmp_local_text_Maghrib, rez_cmp_local_text_Isha] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
@@ -43,7 +67,7 @@ module Rez {
 
     module Strings {
         (:initialized) var text_fajr as ResourceId;
-        (:initialized) var text_magrib as ResourceId;
+        (:initialized) var text_maghrib as ResourceId;
         (:initialized) var text_isha as ResourceId;
         (:initialized) var title as ResourceId;
         (:initialized) var text_dhuhr as ResourceId;

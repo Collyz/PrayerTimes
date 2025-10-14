@@ -171,168 +171,203 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTim
     }
     [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 44; @symbol_functiondef = [onUpdate,44,13,21]; @symbol_param<0> = [dc,44,22,24]; @symbol_param<0>_type<0> = [Dc,44,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_44_40_48_4_start:
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 46 8 ]
-        %tmp.1 = self;
-        symbol [ updateLabels %tmp.2 46 8 20 ];
-        %tmp.2 = getv function %tmp.1 :updateLabels;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_44_40_52_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 45 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 45 8 10 ];
+        symbol [ clear %tmp.2 45 11 16 ];
+        %tmp.2 = getv function %tmp.1 :clear;
         invoke %tmp.1 %tmp.2();
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 46 8 ]
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 46 8 10 ];
+        symbol [ setColor %tmp.4 46 11 19 ];
+        %tmp.4 = getv function %tmp.3 :setColor;
+        symbol [ Graphics %tmp.5 46 20 28 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.6 46 29 39 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLUE;
+        symbol [ Graphics %tmp.7 46 41 49 ];
+        %tmp.7 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.8 46 50 61 ];
+        %tmp.8 = getv %tmp.7 :COLOR_BLACK;
+        invoke %tmp.3 %tmp.4(%tmp.6, %tmp.8);
 [ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 47 8 ]
-        symbol [ View %tmp.4 47 8 12 ];
-        %tmp.4 = getv ? :View;
-        symbol [ onUpdate %tmp.5 47 13 21 ];
-        %tmp.5 = getv function %tmp.4 :onUpdate;
-        %tmp.6 = lgetv %dc;
-        symbol [ dc %tmp.6 47 22 24 ];
-        invoke %tmp.4 %tmp.5(%tmp.6);
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_44_40_48_4_stop:
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 47 8 10 ];
+        symbol [ drawCircle %tmp.10 47 11 21 ];
+        %tmp.10 = getv function %tmp.9 :drawCircle;
+        %tmp.11 = 305;
+        %tmp.12 = 70;
+        %tmp.13 = 5;
+        invoke %tmp.9 %tmp.10(%tmp.11, %tmp.12, %tmp.13);
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 49 8 ]
+        symbol [ System %tmp.15 49 8 14 ];
+        %tmp.15 = getv ? :System;
+        symbol [ println %tmp.16 49 15 22 ];
+        %tmp.16 = getv function %tmp.15 :println;
+        %tmp.17 = "called after draw";
+        invoke %tmp.15 %tmp.16(%tmp.17);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_44_40_52_4_stop:
     }
-    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 53; @symbol_functiondef = [onHide,53,13,19]; ]
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 57; @symbol_functiondef = [onHide,57,13,19]; ]
     function onHide() as Void {
     }
     //! Update all labels
-    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 57; @symbol_functiondef = [updateLabels,57,13,25]; ]
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 61; @symbol_functiondef = [updateLabels,61,13,25]; ]
     function updateLabels() as Void {
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_57_36_66_4_start:
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 58 8 ]
-        for @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_test @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_incr @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_end;
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_init:
-        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_begin" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_end" ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_61_36_69_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 62 8 ]
+        for @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_test @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_incr @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_init:
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_begin" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_end" ]
         %i.1 = local;
-        symbol [ i %i.1 58 17 18 ];
+        symbol [ i %i.1 62 17 18 ];
         %tmp.1 = 0;
         lputv %i.1 %tmp.1;
-        symbol [ i %i.1 58 17 18 ];
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_test:
+        symbol [ i %i.1 62 17 18 ];
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_test:
         %tmp.2 = lgetv %i.1;
-        symbol [ i %tmp.2 58 24 25 ];
-        symbol [ labelKeys %tmp.4 58 28 37 ];
+        symbol [ i %tmp.2 62 24 25 ];
+        symbol [ labelKeys %tmp.4 62 28 37 ];
         %tmp.4 = getv ? :labelKeys;
-        symbol [ size %tmp.5 58 38 42 ];
+        symbol [ size %tmp.5 62 38 42 ];
         %tmp.5 = getv function %tmp.4 :size;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = lt %tmp.2 %tmp.6;
-        bf %tmp.7 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_end;
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_begin:
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_51_65_8_start:
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 59 12 ]
-        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_51_65_8_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_51_65_8_stop" ]
+        bf %tmp.7 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_begin:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_51_67_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 63 12 ]
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_51_67_8_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_51_67_8_stop" ]
         %label.2 = local;
-        symbol [ label %label.2 59 16 21 ];
-        symbol [ labels %tmp.9 59 24 30 ];
+        symbol [ label %label.2 63 16 21 ];
+        symbol [ labels %tmp.9 63 24 30 ];
         %tmp.9 = getv ? :labels;
         %tmp.10 = lgetv %i.1;
-        symbol [ i %tmp.10 59 31 32 ];
+        symbol [ i %tmp.10 63 31 32 ];
         %tmp.11 = agetv %tmp.9 %tmp.10;
         lputv %label.2 %tmp.11;
-        symbol [ label %label.2 59 16 21 ];
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 60 12 ]
-        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_51_65_8_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_51_65_8_stop" ]
+        symbol [ label %label.2 63 16 21 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 64 12 ]
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_51_67_8_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_51_67_8_stop" ]
         %prayerText.3 = local;
-        symbol [ prayerText %prayerText.3 60 16 26 ];
-        symbol [ labelKeys %tmp.13 60 29 38 ];
+        symbol [ prayerText %prayerText.3 64 16 26 ];
+        symbol [ labelKeys %tmp.13 64 29 38 ];
         %tmp.13 = getv ? :labelKeys;
         %tmp.14 = lgetv %i.1;
-        symbol [ i %tmp.14 60 39 40 ];
+        symbol [ i %tmp.14 64 39 40 ];
         %tmp.15 = agetv %tmp.13 %tmp.14;
         lputv %prayerText.3 %tmp.15;
-        symbol [ prayerText %prayerText.3 60 16 26 ];
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 61 12 ]
-        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_51_65_8_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_51_65_8_stop" ]
+        symbol [ prayerText %prayerText.3 64 16 26 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 65 12 ]
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_51_67_8_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_51_67_8_stop" ]
         %timeText.4 = local;
-        symbol [ timeText %timeText.4 61 16 24 ];
-        symbol [ dataObject %tmp.17 61 27 37 ];
+        symbol [ timeText %timeText.4 65 16 24 ];
+        symbol [ dataObject %tmp.17 65 27 37 ];
         %tmp.17 = getv ? :dataObject;
-        symbol [ getValue %tmp.18 61 38 46 ];
+        symbol [ getValue %tmp.18 65 38 46 ];
         %tmp.18 = getv function %tmp.17 :getValue;
-        symbol [ labelKeys %tmp.20 61 47 56 ];
+        symbol [ labelKeys %tmp.20 65 47 56 ];
         %tmp.20 = getv ? :labelKeys;
         %tmp.21 = lgetv %i.1;
-        symbol [ i %tmp.21 61 57 58 ];
+        symbol [ i %tmp.21 65 57 58 ];
         %tmp.22 = agetv %tmp.20 %tmp.21;
         %tmp.23 = invoke %tmp.17 %tmp.18(%tmp.22);
         lputv %timeText.4 %tmp.23;
-        symbol [ timeText %timeText.4 61 16 24 ];
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 62 12 ]
-        symbol [ System %tmp.25 62 12 18 ];
-        %tmp.25 = getv ? :System;
-        symbol [ println %tmp.26 62 19 26 ];
-        %tmp.26 = getv function %tmp.25 :println;
-        %tmp.27 = lgetv %prayerText.3;
-        symbol [ prayerText %tmp.27 62 27 37 ];
-        invoke %tmp.25 %tmp.26(%tmp.27);
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 63 12 ]
-        symbol [ System %tmp.29 63 12 18 ];
-        %tmp.29 = getv ? :System;
-        symbol [ println %tmp.30 63 19 26 ];
-        %tmp.30 = getv function %tmp.29 :println;
-        %tmp.31 = lgetv %timeText.4;
-        symbol [ timeText %tmp.31 63 27 35 ];
-        invoke %tmp.29 %tmp.30(%tmp.31);
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 64 12 ]
-        %tmp.32 = lgetv %label.2;
-        symbol [ label %tmp.32 64 12 17 ];
-        symbol [ setText %tmp.33 64 18 25 ];
-        %tmp.33 = getv function %tmp.32 :setText;
-        %tmp.34 = lgetv %prayerText.3;
-        symbol [ prayerText %tmp.34 64 26 36 ];
-        %tmp.35 = ": ";
-        %tmp.36 = add %tmp.34 %tmp.35;
-        %tmp.37 = lgetv %timeText.4;
-        symbol [ timeText %tmp.37 64 46 54 ];
-        %tmp.38 = add %tmp.36 %tmp.37;
-        invoke %tmp.32 %tmp.33(%tmp.38);
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_51_65_8_stop:
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_incr:
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 58 ]
-        %tmp.41 = lgetv %i.1;
-        symbol [ i %tmp.41 58 46 47 ];
-        %tmp.42 = add %tmp.41 1;
-        lputv %i.1 %tmp.42;
-        symbol [ i %i.1 58 46 47 ];
-        goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_test;
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_58_8_65_8_for_end:
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_57_36_66_4_stop:
+        symbol [ timeText %timeText.4 65 16 24 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 66 12 ]
+        %tmp.24 = lgetv %label.2;
+        symbol [ label %tmp.24 66 12 17 ];
+        symbol [ setText %tmp.25 66 18 25 ];
+        %tmp.25 = getv function %tmp.24 :setText;
+        %tmp.26 = lgetv %prayerText.3;
+        symbol [ prayerText %tmp.26 66 26 36 ];
+        %tmp.27 = ": ";
+        %tmp.28 = add %tmp.26 %tmp.27;
+        %tmp.29 = lgetv %timeText.4;
+        symbol [ timeText %tmp.29 66 46 54 ];
+        %tmp.30 = add %tmp.28 %tmp.29;
+        invoke %tmp.24 %tmp.25(%tmp.30);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_51_67_8_stop:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_incr:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 62 ]
+        %tmp.33 = lgetv %i.1;
+        symbol [ i %tmp.33 62 46 47 ];
+        %tmp.34 = add %tmp.33 1;
+        lputv %i.1 %tmp.34;
+        symbol [ i %i.1 62 46 47 ];
+        goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_test;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_62_8_67_8_for_end:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 68 8 ]
+        symbol [ WatchUi %tmp.35 68 8 15 ];
+        %tmp.35 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.36 68 16 29 ];
+        %tmp.36 = getv function %tmp.35 :requestUpdate;
+        invoke %tmp.35 %tmp.36();
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_61_36_69_4_stop:
     }
     //! Update a single label
-    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 69; @symbol_functiondef = [updateLabel,69,13,24]; @symbol_param<0> = [key,69,25,28]; @symbol_param<0>_type<0> = [Lang,69,32,36]; @symbol_param<0>_type<1> = [String,69,37,43]; @symbol_param<1> = [updateValue,69,45,56]; ]
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 72; @symbol_functiondef = [updateLabel,72,13,24]; @symbol_param<0> = [key,72,25,28]; @symbol_param<0>_type<0> = [Lang,72,32,36]; @symbol_param<0>_type<1> = [String,72,37,43]; @symbol_param<1> = [updateValue,72,45,56]; ]
     function updateLabel(key as Lang.String, updateValue) as Void {
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_69_66_74_4_start:
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 70 8 ]
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_70_8_73_8_if_stmt:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_72_66_77_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 73 8 ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_73_8_76_8_if_stmt:
         %tmp.1 = lgetv %updateValue;
-        symbol [ updateValue %tmp.1 70 12 23 ];
+        symbol [ updateValue %tmp.1 73 12 23 ];
         %tmp.2 = null;
         %tmp.3 = ne %tmp.1 %tmp.2;
-        bf %tmp.3 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_70_8_73_8_if_end;
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_70_8_73_8_if_true:
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_70_33_73_8_start:
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 71 12 ]
-        symbol [ dataObject %tmp.5 71 12 22 ];
+        bf %tmp.3 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_73_8_76_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_73_8_76_8_if_true:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_73_33_76_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 74 12 ]
+        symbol [ dataObject %tmp.5 74 12 22 ];
         %tmp.5 = getv ? :dataObject;
-        symbol [ updateValue %tmp.6 71 23 34 ];
+        symbol [ updateValue %tmp.6 74 23 34 ];
         %tmp.6 = getv function %tmp.5 :updateValue;
         %tmp.7 = lgetv %key;
-        symbol [ key %tmp.7 71 35 38 ];
+        symbol [ key %tmp.7 74 35 38 ];
         %tmp.8 = lgetv %updateValue;
-        symbol [ updateValue %tmp.8 71 40 51 ];
+        symbol [ updateValue %tmp.8 74 40 51 ];
         %tmp.9 = as %tmp.8 { (!Null) };
         invoke %tmp.5 %tmp.6(%tmp.7, %tmp.9);
-[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 72 12 ]
-        symbol [ WatchUi %tmp.10 72 12 19 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 75 12 ]
+        symbol [ WatchUi %tmp.10 75 12 19 ];
         %tmp.10 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.11 72 20 33 ];
+        symbol [ requestUpdate %tmp.11 75 20 33 ];
         %tmp.11 = getv function %tmp.10 :requestUpdate;
         invoke %tmp.10 %tmp.11();
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_70_33_73_8_stop:
-        goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_70_8_73_8_if_end;
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_70_8_73_8_if_end:
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_69_66_74_4_stop:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_73_33_76_8_stop:
+        goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_73_8_76_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_73_8_76_8_if_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_72_66_77_4_stop:
     }
     //! Update position and compute prayer times
-    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 77; @symbol_functiondef = [setPosition,77,20,31]; @symbol_param<0> = [info,77,32,36]; @symbol_param<0>_type<0> = [Info,77,40,44]; ]
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 80; @symbol_functiondef = [setPosition,80,20,31]; @symbol_param<0> = [info,80,32,36]; @symbol_param<0>_type<0> = [Info,80,40,44]; ]
     public
     function setPosition(info as Info) as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_80_54_101_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 97 8 ]
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_80_54_101_4_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_80_54_101_4_stop" ]
+        %position.1 = local;
+        symbol [ position %position.1 97 12 20 ];
+        %tmp.1 = lgetv %info;
+        symbol [ info %tmp.1 97 23 27 ];
+        symbol [ position %tmp.2 97 28 36 ];
+        %tmp.2 = getv %tmp.1 :position;
+        lputv %position.1 %tmp.2;
+        symbol [ position %position.1 97 12 20 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc" 98 8 ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_98_8_100_8_if_stmt:
+        %tmp.3 = lgetv %position.1;
+        symbol [ position %tmp.3 98 12 20 ];
+        %tmp.4 = null;
+        %tmp.5 = ne %tmp.3 %tmp.4;
+        bf %tmp.5 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_98_8_100_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_98_8_100_8_if_true:
+        goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_98_8_100_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_98_8_100_8_if_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesView_mc_80_54_101_4_stop:
     }
 }
 [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesView.mc"; @line = 1; ]
