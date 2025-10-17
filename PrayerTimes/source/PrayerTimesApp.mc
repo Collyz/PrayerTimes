@@ -18,16 +18,17 @@ class PrayerTimesApp extends Application.AppBase {
     }
 
     function onStart(state as Dictionary or Null) as Void {
-        Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPosition));
+
     }
 
     function onStop(state as Dictionary or Null) as Void {
         Position.enableLocationEvents(Position.LOCATION_DISABLE, method(:onPosition));
     }
-
+    
     public function onPosition(info as Info) as Void {
-        _view.setPosition(info);
+        // _view.setPosition(info);
     }
+    
 
     function getInitialView() as [Views] or [Views, InputDelegates] {
         return [_view, new PrayerTimesDelegate(_view)];

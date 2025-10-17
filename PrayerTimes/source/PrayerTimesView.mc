@@ -4,36 +4,22 @@ import Toybox.Position;
 import Toybox.Lang;
 
 public var hasGPS = false as Boolean;
-
+public var circleColor = Graphics.COLOR_RED as Graphics.ColorType;
+public var lat = 0.0;
+public var lon = 0.0;
 class PrayerTimesView extends WatchUi.View {
-
-
-
-    public var labelFajr;
-    public var labelDhujr;
-    public var labelAsr;
-    public var labelMagrib;
-    public var labelIsha;
-    public var counter = 0;
-    public var labels as Lang.Array<WatchUi.Text>;
 
     function initialize() {
         View.initialize();
 
-        labels = new Lang.Array<WatchUi.Text>[5];
-        labels[0] = labelFajr;
-        labels[1] = labelDhujr;
-        labels[2] = labelAsr;
-        labels[3] = labelMagrib;
-        labels[4] = labelIsha;
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
-        setLayout(Rez.Layouts.MainLayout(dc));
+        setLayout(Rez.Layouts.MainLayout(dc)); // Necesary for bitmap loading ... for now
 
         for (var i = 0; i < labelKeys.size(); i++) {
-            labels[i] = findDrawableById(labelKeys[i]) as WatchUi.Text;
+            // labels[i] = findDrawableById(labelKeys[i]) as WatchUi.Text;
         }
     }
 
@@ -41,7 +27,7 @@ class PrayerTimesView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
-        // updateLabels();
+        
     }
 
     // Update the view
@@ -51,15 +37,9 @@ class PrayerTimesView extends WatchUi.View {
         drawTitle(dc);
         drawTitleGraphic(dc);
         updateLabels(dc);
-        if (hasGPS) {
-            drawCircle(dc, Graphics.COLOR_GREEN);
-        } else {
-            drawCircle(dc, Graphics.COLOR_RED);
-        }
+        drawCircle(dc, circleColor);
         
-        
-        // Call the parent onUpdate function to redraw the layout
-        // View.onUpdate(dc);
+        // View.onUpdate(dc); CALL IF USING layout.xml
     }
 
     // Called when this View is removed from the screen. Save the
@@ -79,13 +59,10 @@ class PrayerTimesView extends WatchUi.View {
         var graphic = WatchUi.loadResource(Rez.Drawables.title_underline);
         var x = (dc.getWidth() - graphic.getWidth()) / 2;
         var y = dc.getHeight() * .25;
-        
-        System.println(graphic.getWidth());
-        System.println(dc.getWidth());
         dc.drawBitmap(x, y , graphic);
     }
 
-    //! Update all labels
+    // Update all labels 
     function updateLabels(dc as Dc) as Void {
         var width = dc.getWidth()/5;
         var height = dc.getHeight() * .32;
@@ -101,7 +78,7 @@ class PrayerTimesView extends WatchUi.View {
         WatchUi.requestUpdate();
     }
 
-    //! Update a single label
+    // Update a single label
     function updateLabel(key as Lang.String, updateValue) as Void {
         if (updateValue != null) {
             dataObject.updateValue(key, updateValue);
@@ -112,31 +89,18 @@ class PrayerTimesView extends WatchUi.View {
     function drawCircle(dc as Dc, color as Graphics.ColorType) {
         dc.setColor(color, Graphics.COLOR_BLACK);
         dc.fillCircle(305, 70, 5);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
     }
 
-        //! Update position and compute prayer times
     public function setPosition(info as Info) as Void {
-        // var now = Time.now();
-
-        // calc.setPosition(info);
-
-        // System.println(calc.posInfo);
-
-        // var times = calc.computePrayerTimes(now);
-
-        // if (times != null && times instanceof Dictionary) {
-        //     updateLabel(labelKeys[0], times[:fajr]);
-        //     updateLabel(labelKeys[1], times[:dhuhr]);
-        //     updateLabel(labelKeys[2], times[:asr]);
-        //     updateLabel(labelKeys[3], times[:maghrib]);
-        //     updateLabel(labelKeys[4], times[:isha]);
-        // }
-
         var position = info.position;
         if (position != null){
-            hasGPS = true;
+            circleColor = Graphics.COLOR_GREEN;
+            var data = position.toDegrees();
+            lat = data[0];
+            lon = data[1];
         } else {
-            hasGPS = false;
+            circleColor = Graphics.COLOR_RED;
         }
     }
 
