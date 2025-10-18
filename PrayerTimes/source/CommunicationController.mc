@@ -8,7 +8,8 @@ import Toybox.Communications;
 class CommunicationsController {
     private var _view as LoadingView?;
     private var _gpsMsg = "Getting GPS Info";
-    private var _wifiMsg = "Getting Wifi";
+    private var _wifiMsg = "Finding Wifi";
+    private var _wifiSuccessMsg = "Found Wifi,\nMaking Request";
 
     public function checkWifiStatus() as Void {
         // System.println("Started wifi check");
@@ -25,9 +26,8 @@ class CommunicationsController {
         _view.startGPSTimer();
 
         Position.enableLocationEvents(Position.LOCATION_ONE_SHOT, method(:onPosition));
-
-        _view.stopGPSTimer();
-        _view.successCallback("GPS Success", method(:checkWifiStatus));
+        // _view.stopGPSTimer();
+        // _view.successCallback("GPS Success", method(:checkWifiStatus));
     }
 
     public function onPosition(info as Info) as Void {  
@@ -47,7 +47,7 @@ class CommunicationsController {
         if (result[:wifiAvailable]) {
             // Success callback
             _view.stopWifiTimer();
-            _view.successCallback("Wifi Detected", method(:makeRequest));
+            _view.successCallback(_wifiSuccessMsg, method(:makeRequest));
         } else {
             _view.startFailureTimer("Failed at Wifi");
         }
@@ -60,6 +60,10 @@ class CommunicationsController {
 
      //! Make the web request
     public function makeRequest() as Void {
+        _view.setMessage("Making Request");
+        _view.startRequestTimer();
+        _view.resetColors();
+
         var url = "https://prayer-api-kappa.vercel.app/praytime";
         var params = {
             "lat" => lat,
@@ -82,6 +86,7 @@ class CommunicationsController {
                 System.println(keys[i].toString() + ": " + cinfo[keys[i]].state);
             }
         }
+        
         Communications.makeWebRequest(
             url,
             params,
@@ -91,6 +96,7 @@ class CommunicationsController {
     }
 
     public function onReceive(responseCode as Number, data as Dictionary or String or Null) as Void {
+        _view.stopRequestTimer();
         if (responseCode == 200) {
             // System.println(data);
             if (data instanceof Dictionary) {
