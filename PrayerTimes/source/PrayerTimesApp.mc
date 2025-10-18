@@ -1,11 +1,15 @@
 import Toybox.Application;
+import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.Position;
 import Toybox.WatchUi;
 
-var labelKeys as Array<String> = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
-var dataObject = new StorageManager();
-// var calc = new PrayerTimesCalculator();
+public var lat = 0.0;
+public var lon = 0.0;
+public var hasGPS = false as Boolean;
+public var storageManager = new StorageManager();
+public var circleColor = Graphics.COLOR_RED as Graphics.ColorType;
+public var labelKeys as Array<String> = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
 
 class PrayerTimesApp extends Application.AppBase {
 
@@ -14,7 +18,7 @@ class PrayerTimesApp extends Application.AppBase {
     function initialize(){
         AppBase.initialize();
         _view = new PrayerTimesView();
-        dataObject.createKeys(labelKeys);
+        storageManager.createKeys(labelKeys);
     }
 
     function onStart(state as Dictionary or Null) as Void {
@@ -22,11 +26,11 @@ class PrayerTimesApp extends Application.AppBase {
     }
 
     function onStop(state as Dictionary or Null) as Void {
-        Position.enableLocationEvents(Position.LOCATION_DISABLE, method(:onPosition));
+        Position.enableLocationEvents(Position.LOCATION_DISABLE, method(:cleanUp));
     }
     
-    public function onPosition(info as Info) as Void {
-        // _view.setPosition(info);
+    public function cleanUp(info as Info) as Void {
+        circleColor = Graphics.COLOR_LT_GRAY;
     }
     
 

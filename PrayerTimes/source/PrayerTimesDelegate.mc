@@ -1,8 +1,8 @@
+import Toybox.Lang;
+import Toybox.Time;
 import Toybox.System;
 import Toybox.Position;
 import Toybox.WatchUi;
-import Toybox.Lang;
-import Toybox.Time;
 import Toybox.Communications;
 class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
     
@@ -16,25 +16,12 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
         BehaviorDelegate.initialize();
     }
 
-    // function onMenu() as Boolean {
-    //     // WatchUi.pushView(new Rez.Menus.MainMenu(), new PrayerTimesMenuDelegate(), WatchUi.SLIDE_UP);
-    //     return true;
-    // }
-
     function onKeyPressed(keyEvent as KeyEvent) as Boolean {
         // If the key pressed is the ENTER key
         if (keyEvent.getKey() == KEY_ENTER) {
             Communications.checkWifiConnection(method(:onWifiCallback));
-            // }
-            // self.getUTCOffset();
             self.makeRequest();
-            // count += 1;
-            // _view.updateLabel(labelKeys[0], count);
-            // _view.requestUpdate();
-            
         }
-
-        // Always return true (event handled)
         return true;
     }
 
@@ -55,8 +42,9 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
         _view.setPosition(info);
     }
 
-    public function getUTCOffset() as Number {
-        return System.getClockTime().timeZoneOffset / 60 / 60;
+    public function getUTCOffset() as Float {
+        // Gets the UTC offset in seconds and converts it to hours offset
+        return System.getClockTime().timeZoneOffset / 60.0 / 60.0;
     }
 
     //! Make the web request
@@ -107,6 +95,14 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
             // Update view
             _view.circleColor = Graphics.COLOR_DK_RED;
             System.println("failure: " + responseCode);
+        }
+    }
+
+    // Update a single label
+    function updateLabel(key as Lang.String, updateValue) as Void {
+        if (updateValue != null) {
+            storageManager.updateValue(key, updateValue);
+            WatchUi.requestUpdate();
         }
     }
 

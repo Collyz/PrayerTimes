@@ -3,49 +3,34 @@ import Toybox.WatchUi;
 import Toybox.Position;
 import Toybox.Lang;
 
-public var hasGPS = false as Boolean;
-public var circleColor = Graphics.COLOR_RED as Graphics.ColorType;
-public var lat = 0.0;
-public var lon = 0.0;
 class PrayerTimesView extends WatchUi.View {
 
     function initialize() {
         View.initialize();
-
     }
 
-    // Load your resources here
+
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc)); // Necesary for bitmap loading ... for now
-
-        for (var i = 0; i < labelKeys.size(); i++) {
-            // labels[i] = findDrawableById(labelKeys[i]) as WatchUi.Text;
-        }
     }
 
-    // Called when this View is brought to the foreground. Restore
-    // the state of this View and prepare it to be shown. This includes
-    // loading resources into memory.
     function onShow() as Void {
         
     }
 
-    // Update the view
     function onUpdate(dc as Dc) as Void {
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         drawTitle(dc);
         drawTitleGraphic(dc);
-        updateLabels(dc);
+        drawLabels(dc);
         drawCircle(dc, circleColor);
         
         // View.onUpdate(dc); CALL IF USING layout.xml
     }
 
-    // Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
-    // memory.
     function onHide() as Void {
+
     }
 
     function drawTitle(dc as Dc) {
@@ -62,28 +47,20 @@ class PrayerTimesView extends WatchUi.View {
         dc.drawBitmap(x, y , graphic);
     }
 
-    // Update all labels 
-    function updateLabels(dc as Dc) as Void {
+    // Draw all labels 
+    function drawLabels(dc as Dc) as Void {
         var width = dc.getWidth()/5;
         var height = dc.getHeight() * .32;
         var hInc = dc.getHeight() * .12;
         for (var i = 0; i < labelKeys.size(); i++) {
             // var label = labels[i];
             var prayerText = labelKeys[i];
-            var timeText = dataObject.getValue(labelKeys[i]);
+            var timeText = storageManager.getValue(labelKeys[i]);
             var setText = prayerText + ": " + timeText;
             dc.drawText(width, height + (hInc * i), Graphics.FONT_SMALL, setText ,Graphics.TEXT_JUSTIFY_LEFT);
             // label.setText(prayerText + ": " + timeText);
         }
         WatchUi.requestUpdate();
-    }
-
-    // Update a single label
-    function updateLabel(key as Lang.String, updateValue) as Void {
-        if (updateValue != null) {
-            dataObject.updateValue(key, updateValue);
-            WatchUi.requestUpdate();
-        }
     }
 
     function drawCircle(dc as Dc, color as Graphics.ColorType) {
