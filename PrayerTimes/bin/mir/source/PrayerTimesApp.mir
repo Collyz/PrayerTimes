@@ -105,12 +105,10 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTim
         %tmp.5 = aputv %tmp.4 0 %tmp.3;
         symbol [ PrayerTimesDelegate %tmp.9 38 27 46 ];
         %tmp.9 = getv ? :PrayerTimesDelegate;
-        symbol [ _view %tmp.11 38 47 52 ];
-        %tmp.11 = getv ? :_view;
-        %tmp.6 = newc %tmp.9 (%tmp.11);
-        %tmp.12 = dup %tmp.5;
-        %tmp.13 = aputv %tmp.12 1 %tmp.6;
-        ret %tmp.13;
+        %tmp.6 = newc %tmp.9 ();
+        %tmp.10 = dup %tmp.5;
+        %tmp.11 = aputv %tmp.10 1 %tmp.6;
+        ret %tmp.11;
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTimesApp_mc_37_68_39_4_stop:
     }
 }

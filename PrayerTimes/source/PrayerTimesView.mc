@@ -2,6 +2,7 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Position;
 import Toybox.Lang;
+import Rez.Styles;
 
 class PrayerTimesView extends WatchUi.View {
 
@@ -25,6 +26,8 @@ class PrayerTimesView extends WatchUi.View {
         drawTitleGraphic(dc);
         drawLabels(dc);
         drawCircle(dc, circleColor);
+        var hint = WatchUi.loadResource(Rez.Drawables.menuHint);
+        dc.drawBitmap(0, dc.getHeight() / 2, hint);
         
         // View.onUpdate(dc); CALL IF USING layout.xml
     }

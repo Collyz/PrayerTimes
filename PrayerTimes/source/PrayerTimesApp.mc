@@ -35,7 +35,7 @@ class PrayerTimesApp extends Application.AppBase {
     
 
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [_view, new PrayerTimesDelegate(_view)];
+        return [_view, new PrayerTimesDelegate()];
     }
 }
 
