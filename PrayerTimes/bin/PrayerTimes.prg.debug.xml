@@ -9,7 +9,7 @@
         <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesView.mc" id="9" lineNum="10" parent="globals/PrayerTimesView" pc="268435527" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\LoadingView.mc" id="10" lineNum="5" parent="globals/LoadingView" pc="268435539" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesApp.mc" id="11" lineNum="10" parent="globals/PrayerTimesApp" pc="268435551" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="12" lineNum="6" parent="globals/PrayerTimesDelegate" pc="268435563" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="12" lineNum="7" parent="globals/PrayerTimesDelegate" pc="268435563" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\Storage.mc" id="13" lineNum="24" parent="globals/StorageManager" pc="268435575" symbol="getValue"/>
         <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\Storage.mc" id="13" lineNum="25" parent="globals/StorageManager" pc="268435578" symbol="getValue"/>
         <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\Storage.mc" id="13" lineNum="26" parent="globals/StorageManager" pc="268435594" symbol="getValue"/>
@@ -89,68 +89,78 @@
         <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesApp.mc" id="37" lineNum="17" parent="globals/PrayerTimesApp" pc="268436511" symbol="initialize"/>
         <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesApp.mc" id="38" lineNum="24" parent="globals/PrayerTimesApp" pc="268436531" symbol="onStop"/>
         <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesApp.mc" id="38" lineNum="25" parent="globals/PrayerTimesApp" pc="268436533" symbol="onStop"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="39" lineNum="40" parent="globals/PrayerTimesDelegate" pc="268436562" symbol="onMenu"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="39" lineNum="41" parent="globals/PrayerTimesDelegate" pc="268436564" symbol="onMenu"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="39" lineNum="42" parent="globals/PrayerTimesDelegate" pc="268436580" symbol="onMenu"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="39" lineNum="43" parent="globals/PrayerTimesDelegate" pc="268436607" symbol="onMenu"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="39" lineNum="44" parent="globals/PrayerTimesDelegate" pc="268436625" symbol="onMenu"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="40" lineNum="47" parent="globals/PrayerTimesDelegate" pc="268436627" symbol="onPosition"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="40" lineNum="49" parent="globals/PrayerTimesDelegate" pc="268436629" symbol="onPosition"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="41" lineNum="52" parent="globals/PrayerTimesDelegate" pc="268436646" symbol="getUTCOffset"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="41" lineNum="53" parent="globals/PrayerTimesDelegate" pc="268436648" symbol="getUTCOffset"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="42" lineNum="13" parent="globals/PrayerTimesDelegate" pc="268436670" symbol="initialize"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="42" lineNum="14" parent="globals/PrayerTimesDelegate" pc="268436672" symbol="initialize"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="42" lineNum="15" parent="globals/PrayerTimesDelegate" pc="268436681" symbol="initialize"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="80" parent="globals/PrayerTimesDelegate" pc="268436694" symbol="onReceive"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="81" parent="globals/PrayerTimesDelegate" pc="268436696" symbol="onReceive"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="83" parent="globals/PrayerTimesDelegate" pc="268436705" symbol="onReceive"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="84" parent="globals/PrayerTimesDelegate" pc="268436720" symbol="onReceive"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="85" parent="globals/PrayerTimesDelegate" pc="268436749" symbol="onReceive"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="86" parent="globals/PrayerTimesDelegate" pc="268436779" symbol="onReceive"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="87" parent="globals/PrayerTimesDelegate" pc="268436809" symbol="onReceive"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="88" parent="globals/PrayerTimesDelegate" pc="268436839" symbol="onReceive"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="57" parent="globals/PrayerTimesDelegate" pc="268436876" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="58" parent="globals/PrayerTimesDelegate" pc="268436879" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="59" parent="globals/PrayerTimesDelegate" pc="268436886" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="64" parent="globals/PrayerTimesDelegate" pc="268436927" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="72" parent="globals/PrayerTimesDelegate" pc="268436960" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="23" parent="globals/PrayerTimesDelegate" pc="268436993" symbol="onKeyPressed"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="25" parent="globals/PrayerTimesDelegate" pc="268436995" symbol="onKeyPressed"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="27" parent="globals/PrayerTimesDelegate" pc="268437008" symbol="onKeyPressed"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="28" parent="globals/PrayerTimesDelegate" pc="268437016" symbol="onKeyPressed"/>
-        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="37" parent="globals/PrayerTimesDelegate" pc="268437029" symbol="onKeyPressed"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="46" lineNum="12" parent="globals/Rez/Drawables/shapes" pc="268437031" symbol="&lt;init&gt;"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="38" parent="globals/Rez/Layouts" pc="268437043" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="39" parent="globals/Rez/Layouts" pc="268437054" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="41" parent="globals/Rez/Layouts" pc="268437149" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="42" parent="globals/Rez/Layouts" pc="268437236" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="44" parent="globals/Rez/Layouts" pc="268437267" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="46" parent="globals/Rez/Layouts" pc="268437362" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="48" parent="globals/Rez/Layouts" pc="268437457" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="50" parent="globals/Rez/Layouts" pc="268437552" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="52" parent="globals/Rez/Layouts" pc="268437647" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="54" parent="globals/Rez/Layouts" pc="268437742" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="59" parent="globals/Rez/Menus/MainMenu" pc="268437782" symbol="&lt;init&gt;"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="49" lineNum="14" parent="globals/Rez/Drawables/shapes" pc="268437794" symbol="initialize"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="49" lineNum="15" parent="globals/Rez/Drawables/shapes" pc="268437796" symbol="initialize"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="18" parent="globals/Rez/Drawables/shapes" pc="268437813" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="19" parent="globals/Rez/Drawables/shapes" pc="268437815" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="20" parent="globals/Rez/Drawables/shapes" pc="268437825" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="21" parent="globals/Rez/Drawables/shapes" pc="268437834" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="25" parent="globals/Rez/Drawables/shapes" pc="268437841" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="26" parent="globals/Rez/Drawables/shapes" pc="268437855" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="27" parent="globals/Rez/Drawables/shapes" pc="268437873" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="29" parent="globals/Rez/Drawables/shapes" pc="268437887" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="30" parent="globals/Rez/Drawables/shapes" pc="268437904" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="31" parent="globals/Rez/Drawables/shapes" pc="268437921" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="32" parent="globals/Rez/Drawables/shapes" pc="268437937" symbol="draw"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="60" parent="globals/Rez/Menus/MainMenu" pc="268437957" symbol="initialize"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="61" parent="globals/Rez/Menus/MainMenu" pc="268437959" symbol="initialize"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="62" parent="globals/Rez/Menus/MainMenu" pc="268437971" symbol="initialize"/>
-        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="63" parent="globals/Rez/Menus/MainMenu" pc="268438016" symbol="initialize"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="39" lineNum="47" parent="globals/PrayerTimesDelegate" pc="268436562" symbol="onMenu"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="39" lineNum="48" parent="globals/PrayerTimesDelegate" pc="268436564" symbol="onMenu"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="39" lineNum="49" parent="globals/PrayerTimesDelegate" pc="268436580" symbol="onMenu"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="39" lineNum="50" parent="globals/PrayerTimesDelegate" pc="268436607" symbol="onMenu"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="40" lineNum="53" parent="globals/PrayerTimesDelegate" pc="268436609" symbol="onPosition"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="40" lineNum="55" parent="globals/PrayerTimesDelegate" pc="268436611" symbol="onPosition"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="41" lineNum="58" parent="globals/PrayerTimesDelegate" pc="268436628" symbol="getUTCOffset"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="41" lineNum="59" parent="globals/PrayerTimesDelegate" pc="268436630" symbol="getUTCOffset"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="42" lineNum="41" parent="globals/PrayerTimesDelegate" pc="268436652" symbol="onWifiCallback"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="42" lineNum="42" parent="globals/PrayerTimesDelegate" pc="268436654" symbol="onWifiCallback"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="42" lineNum="43" parent="globals/PrayerTimesDelegate" pc="268436665" symbol="onWifiCallback"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="14" parent="globals/PrayerTimesDelegate" pc="268436676" symbol="initialize"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="15" parent="globals/PrayerTimesDelegate" pc="268436678" symbol="initialize"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="43" lineNum="16" parent="globals/PrayerTimesDelegate" pc="268436687" symbol="initialize"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="94" parent="globals/PrayerTimesDelegate" pc="268436700" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="95" parent="globals/PrayerTimesDelegate" pc="268436702" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="97" parent="globals/PrayerTimesDelegate" pc="268436711" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="98" parent="globals/PrayerTimesDelegate" pc="268436726" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="99" parent="globals/PrayerTimesDelegate" pc="268436755" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="100" parent="globals/PrayerTimesDelegate" pc="268436785" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="101" parent="globals/PrayerTimesDelegate" pc="268436815" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="102" parent="globals/PrayerTimesDelegate" pc="268436845" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="108" parent="globals/PrayerTimesDelegate" pc="268436881" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="44" lineNum="109" parent="globals/PrayerTimesDelegate" pc="268436897" symbol="onReceive"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="63" parent="globals/PrayerTimesDelegate" pc="268436919" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="64" parent="globals/PrayerTimesDelegate" pc="268436922" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="65" parent="globals/PrayerTimesDelegate" pc="268436929" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="70" parent="globals/PrayerTimesDelegate" pc="268436970" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="78" parent="globals/PrayerTimesDelegate" pc="268437003" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="79" parent="globals/PrayerTimesDelegate" pc="268437015" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="80" parent="globals/PrayerTimesDelegate" pc="268437023" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="81" parent="globals/PrayerTimesDelegate" pc="268437038" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="82" parent="globals/PrayerTimesDelegate" pc="268437048" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="83" parent="globals/PrayerTimesDelegate" pc="268437064" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="45" lineNum="86" parent="globals/PrayerTimesDelegate" pc="268437121" symbol="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="46" lineNum="24" parent="globals/PrayerTimesDelegate" pc="268437154" symbol="onKeyPressed"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="46" lineNum="26" parent="globals/PrayerTimesDelegate" pc="268437156" symbol="onKeyPressed"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="46" lineNum="27" parent="globals/PrayerTimesDelegate" pc="268437169" symbol="onKeyPressed"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="46" lineNum="30" parent="globals/PrayerTimesDelegate" pc="268437195" symbol="onKeyPressed"/>
+        <entry filename="C:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\source\\PrayerTimesDelegate.mc" id="46" lineNum="38" parent="globals/PrayerTimesDelegate" pc="268437205" symbol="onKeyPressed"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="47" lineNum="12" parent="globals/Rez/Drawables/shapes" pc="268437207" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="38" parent="globals/Rez/Layouts" pc="268437219" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="39" parent="globals/Rez/Layouts" pc="268437230" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="41" parent="globals/Rez/Layouts" pc="268437325" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="42" parent="globals/Rez/Layouts" pc="268437412" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="44" parent="globals/Rez/Layouts" pc="268437443" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="46" parent="globals/Rez/Layouts" pc="268437538" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="48" parent="globals/Rez/Layouts" pc="268437633" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="50" parent="globals/Rez/Layouts" pc="268437728" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="52" parent="globals/Rez/Layouts" pc="268437823" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="48" lineNum="54" parent="globals/Rez/Layouts" pc="268437918" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="49" lineNum="59" parent="globals/Rez/Menus/MainMenu" pc="268437958" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="14" parent="globals/Rez/Drawables/shapes" pc="268437970" symbol="initialize"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="50" lineNum="15" parent="globals/Rez/Drawables/shapes" pc="268437972" symbol="initialize"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="18" parent="globals/Rez/Drawables/shapes" pc="268437989" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="19" parent="globals/Rez/Drawables/shapes" pc="268437991" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="20" parent="globals/Rez/Drawables/shapes" pc="268438001" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="21" parent="globals/Rez/Drawables/shapes" pc="268438010" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="25" parent="globals/Rez/Drawables/shapes" pc="268438017" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="26" parent="globals/Rez/Drawables/shapes" pc="268438031" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="27" parent="globals/Rez/Drawables/shapes" pc="268438049" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="29" parent="globals/Rez/Drawables/shapes" pc="268438063" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="30" parent="globals/Rez/Drawables/shapes" pc="268438080" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="31" parent="globals/Rez/Drawables/shapes" pc="268438097" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="51" lineNum="32" parent="globals/Rez/Drawables/shapes" pc="268438113" symbol="draw"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="52" lineNum="60" parent="globals/Rez/Menus/MainMenu" pc="268438133" symbol="initialize"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="52" lineNum="61" parent="globals/Rez/Menus/MainMenu" pc="268438135" symbol="initialize"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="52" lineNum="62" parent="globals/Rez/Menus/MainMenu" pc="268438147" symbol="initialize"/>
+        <entry filename="c:\\Users\\Safin\\Documents\\PrayerTimesApp\\PrayerTimes\\PrayerTimes\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="52" lineNum="63" parent="globals/Rez/Menus/MainMenu" pc="268438192" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
-        <entry field="true" id="39" symbol="text_asr"/>
+        <entry field="true" id="40" symbol="text_asr"/>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8389346" symbol="text"/>
         <entry id="11" object="true" symbol="StorageManager"/>
@@ -158,7 +168,7 @@
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="5" module="true" symbol="globals/Rez/Menus"/>
         <entry id="8390740" method="true" symbol="drawTitle"/>
-        <entry id="36" method="true" symbol="MainLayout"/>
+        <entry id="37" method="true" symbol="MainLayout"/>
         <entry id="10" object="true" symbol="PrayerTimesView"/>
         <entry id="9" object="true" symbol="PrayerTimesDelegate"/>
         <entry id="8390424" module="true" symbol="Storage"/>
@@ -166,16 +176,16 @@
         <entry id="27" method="true" symbol="onPosition"/>
         <entry id="8389629" method="true" symbol="getValue"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="35" symbol="title_underline"/>
-        <entry field="true" id="38" symbol="AppName"/>
+        <entry field="true" id="36" symbol="title_underline"/>
+        <entry field="true" id="39" symbol="AppName"/>
         <entry id="6" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389594" symbol="headers"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8389345" symbol="rezId"/>
-        <entry id="32" symbol="responseKeys"/>
+        <entry id="33" symbol="responseKeys"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry field="true" id="41" symbol="text_fajr"/>
-        <entry field="true" id="40" symbol="text_dhuhr"/>
+        <entry field="true" id="42" symbol="text_fajr"/>
+        <entry field="true" id="41" symbol="text_dhuhr"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry field="true" id="26" symbol="&lt;globals/PrayerTimesApp/&lt;&gt;_view&gt;"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
@@ -186,8 +196,8 @@
         <entry field="true" id="14" symbol="hasGPS"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="45" symbol="item_2"/>
-        <entry id="44" symbol="item_1"/>
+        <entry id="46" symbol="item_2"/>
+        <entry id="45" symbol="item_1"/>
         <entry id="17" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
@@ -197,23 +207,27 @@
         <entry field="true" id="8389850" symbol="count"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry field="true" id="8389063" symbol="identifier"/>
-        <entry field="true" id="43" symbol="text_maghrib"/>
+        <entry field="true" id="44" symbol="text_maghrib"/>
         <entry field="true" id="8389306" symbol="lon"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
         <entry id="7" object="true" symbol="LoadingView"/>
+        <entry id="8391714" symbol="wifiAvailable"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="37" object="true" symbol="MainMenu"/>
+        <entry id="38" object="true" symbol="MainMenu"/>
         <entry id="8389844" symbol="responseType"/>
         <entry id="15" symbol="labelKeys"/>
         <entry field="true" id="8389305" symbol="lat"/>
         <entry id="8388786" method="true" symbol="method"/>
+        <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="31" method="true" symbol="onReceive"/>
+        <entry id="32" method="true" symbol="onWifiCallback"/>
         <entry id="22" method="true" symbol="drawTitleGraphic"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8389068" method="true" symbol="draw"/>
         <entry field="true" id="12" symbol="circleColor"/>
-        <entry field="true" id="33" symbol="LauncherIcon"/>
+        <entry field="true" id="34" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="25" method="true" symbol="updateLabels"/>
         <entry id="8389123" method="true" symbol="onShow"/>
@@ -223,7 +237,7 @@
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
-        <entry id="34" object="true" symbol="shapes"/>
+        <entry id="35" object="true" symbol="shapes"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="16" module="true" symbol="Layouts"/>
         <entry id="8388642" module="true" symbol="Position"/>
@@ -231,7 +245,7 @@
         <entry id="20" method="true" symbol="keyExists"/>
         <entry id="21" method="true" symbol="updateValue"/>
         <entry id="24" method="true" symbol="updateLabel"/>
-        <entry field="true" id="42" symbol="text_isha"/>
+        <entry field="true" id="43" symbol="text_isha"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="8388635" module="true" symbol="Application"/>
         <entry field="true" id="8389642" symbol="title"/>
@@ -276,23 +290,28 @@
         <entry endPc="268436402" name="position" stackId="2" startPc="268436330"/>
         <entry endPc="268436387" name="data" stackId="3" startPc="268436344"/>
         <entry arg="true" endPc="268436561" name="state" stackId="1" startPc="268436531"/>
-        <entry arg="true" endPc="268436645" name="info" stackId="1" startPc="268436627"/>
-        <entry arg="true" endPc="268436693" name="view" stackId="1" startPc="268436670"/>
-        <entry arg="true" endPc="268436875" name="responseCode" stackId="1" startPc="268436694"/>
-        <entry arg="true" endPc="268436875" name="data" stackId="2" startPc="268436694"/>
-        <entry endPc="268436991" name="url" stackId="1" startPc="268436879"/>
-        <entry endPc="268436991" name="params" stackId="2" startPc="268436879"/>
-        <entry endPc="268436991" name="options" stackId="3" startPc="268436879"/>
-        <entry arg="true" endPc="268437030" name="keyEvent" stackId="1" startPc="268436993"/>
-        <entry arg="true" endPc="268437781" name="dc" stackId="1" startPc="268437043"/>
-        <entry endPc="268437781" name="rez_cmp_local_text_AppTitle" stackId="2" startPc="268437054"/>
-        <entry endPc="268437781" name="rez_cmp_local_bitmap_title_underline" stackId="3" startPc="268437054"/>
-        <entry endPc="268437781" name="rez_cmp_local_text_Fajr" stackId="4" startPc="268437054"/>
-        <entry endPc="268437781" name="rez_cmp_local_text_Dhuhr" stackId="5" startPc="268437054"/>
-        <entry endPc="268437781" name="rez_cmp_local_text_Asr" stackId="6" startPc="268437054"/>
-        <entry endPc="268437781" name="rez_cmp_local_text_Maghrib" stackId="7" startPc="268437054"/>
-        <entry endPc="268437781" name="rez_cmp_local_text_Isha" stackId="8" startPc="268437054"/>
-        <entry arg="true" endPc="268437956" name="dc" stackId="1" startPc="268437813"/>
+        <entry arg="true" endPc="268436627" name="info" stackId="1" startPc="268436609"/>
+        <entry arg="true" endPc="268436675" name="result" stackId="1" startPc="268436652"/>
+        <entry arg="true" endPc="268436699" name="view" stackId="1" startPc="268436676"/>
+        <entry arg="true" endPc="268436918" name="responseCode" stackId="1" startPc="268436700"/>
+        <entry arg="true" endPc="268436918" name="data" stackId="2" startPc="268436700"/>
+        <entry endPc="268437152" name="url" stackId="1" startPc="268436922"/>
+        <entry endPc="268437152" name="params" stackId="2" startPc="268436922"/>
+        <entry endPc="268437152" name="options" stackId="3" startPc="268436922"/>
+        <entry endPc="268437152" name="settings" stackId="4" startPc="268436922"/>
+        <entry endPc="268437152" name="cinfo" stackId="5" startPc="268436922"/>
+        <entry endPc="268437117" name="keys" stackId="6" startPc="268437038"/>
+        <entry endPc="268437117" name="i" stackId="7" startPc="268437064"/>
+        <entry arg="true" endPc="268437206" name="keyEvent" stackId="1" startPc="268437154"/>
+        <entry arg="true" endPc="268437957" name="dc" stackId="1" startPc="268437219"/>
+        <entry endPc="268437957" name="rez_cmp_local_text_AppTitle" stackId="2" startPc="268437230"/>
+        <entry endPc="268437957" name="rez_cmp_local_bitmap_title_underline" stackId="3" startPc="268437230"/>
+        <entry endPc="268437957" name="rez_cmp_local_text_Fajr" stackId="4" startPc="268437230"/>
+        <entry endPc="268437957" name="rez_cmp_local_text_Dhuhr" stackId="5" startPc="268437230"/>
+        <entry endPc="268437957" name="rez_cmp_local_text_Asr" stackId="6" startPc="268437230"/>
+        <entry endPc="268437957" name="rez_cmp_local_text_Maghrib" stackId="7" startPc="268437230"/>
+        <entry endPc="268437957" name="rez_cmp_local_text_Isha" stackId="8" startPc="268437230"/>
+        <entry arg="true" endPc="268438132" name="dc" stackId="1" startPc="268437989"/>
     </localVars>
     <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B4433-00"/>
     <annotations>
@@ -314,12 +333,12 @@
         <dataEntry label="globals/LoadingView" offset="590" parentId="globals" symbolId="LoadingView" type="class"/>
         <dataEntry label="globals/PrayerTimesApp" offset="670" parentId="globals" symbolId="PrayerTimesApp" type="class"/>
         <dataEntry label="globals/PrayerTimesDelegate" offset="759" parentId="globals" symbolId="PrayerTimesDelegate" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="884" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="937" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="972" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="1007" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/Drawables/shapes" offset="1096" parentId="Drawables" symbolId="shapes" type="class"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1149" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="893" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="946" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="981" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1016" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Drawables/shapes" offset="1105" parentId="Drawables" symbolId="shapes" type="class"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1158" parentId="Menus" symbolId="MainMenu" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435506" name="getApp" startPc="268435486">
@@ -453,50 +472,54 @@
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436626" name="onMenu" parent="PrayerTimesDelegate" startPc="268436562">
+        <functionEntry accessMode="public" endPc="268436608" name="onMenu" parent="PrayerTimesDelegate" startPc="268436562">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436645" name="onPosition" parent="PrayerTimesDelegate" startPc="268436627">
+        <functionEntry accessMode="public" endPc="268436627" name="onPosition" parent="PrayerTimesDelegate" startPc="268436609">
             <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436669" name="getUTCOffset" parent="PrayerTimesDelegate" startPc="268436646">
+        <functionEntry accessMode="public" endPc="268436651" name="getUTCOffset" parent="PrayerTimesDelegate" startPc="268436628">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436693" name="initialize" parent="PrayerTimesDelegate" startPc="268436670">
+        <functionEntry accessMode="public" endPc="268436675" name="onWifiCallback" parent="PrayerTimesDelegate" startPc="268436652">
+            <param id="result"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436699" name="initialize" parent="PrayerTimesDelegate" startPc="268436676">
             <param id="view"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436875" name="onReceive" parent="PrayerTimesDelegate" startPc="268436694">
+        <functionEntry accessMode="public" endPc="268436918" name="onReceive" parent="PrayerTimesDelegate" startPc="268436700">
             <param id="responseCode"/>
             <param id="data"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436992" name="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;" parent="PrayerTimesDelegate" startPc="268436876">
+        <functionEntry accessMode="private" endPc="268437153" name="&lt;globals/PrayerTimesDelegate/&lt;&gt;makeRequest&gt;" parent="PrayerTimesDelegate" startPc="268436919">
             <documentation><![CDATA[<div class="description"> Make the web request<br/></div>]]></documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437030" name="onKeyPressed" parent="PrayerTimesDelegate" startPc="268436993">
+        <functionEntry accessMode="public" endPc="268437206" name="onKeyPressed" parent="PrayerTimesDelegate" startPc="268437154">
             <param id="keyEvent"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437042" name="&lt;init&gt;" parent="shapes" startPc="268437031">
+        <functionEntry accessMode="public" endPc="268437218" name="&lt;init&gt;" parent="shapes" startPc="268437207">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437781" name="MainLayout" parent="Layouts" startPc="268437043">
+        <functionEntry accessMode="public" endPc="268437957" name="MainLayout" parent="Layouts" startPc="268437219">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437793" name="&lt;init&gt;" parent="MainMenu" startPc="268437782">
+        <functionEntry accessMode="public" endPc="268437969" name="&lt;init&gt;" parent="MainMenu" startPc="268437958">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437812" name="initialize" parent="shapes" startPc="268437794">
+        <functionEntry accessMode="public" endPc="268437988" name="initialize" parent="shapes" startPc="268437970">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437956" name="draw" parent="shapes" startPc="268437813">
+        <functionEntry accessMode="public" endPc="268438132" name="draw" parent="shapes" startPc="268437989">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438061" name="initialize" parent="MainMenu" startPc="268437957">
+        <functionEntry accessMode="public" endPc="268438237" name="initialize" parent="MainMenu" startPc="268438133">
             <documentation/>
         </functionEntry>
     </functions>

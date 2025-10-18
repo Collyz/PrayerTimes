@@ -1,8 +1,9 @@
+import Toybox.System;
 import Toybox.Position;
 import Toybox.WatchUi;
 import Toybox.Lang;
 import Toybox.Time;
-
+import Toybox.Communications;
 class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
     
     var _view;
@@ -23,10 +24,10 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
     function onKeyPressed(keyEvent as KeyEvent) as Boolean {
         // If the key pressed is the ENTER key
         if (keyEvent.getKey() == KEY_ENTER) {
+            Communications.checkWifiConnection(method(:onWifiCallback));
+            // }
             // self.getUTCOffset();
-            if (hasGPS) {
-                self.makeRequest();
-            }
+            self.makeRequest();
             // count += 1;
             // _view.updateLabel(labelKeys[0], count);
             // _view.requestUpdate();
@@ -35,6 +36,12 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
 
         // Always return true (event handled)
         return true;
+    }
+
+    function onWifiCallback(result as {:wifiAvailable as Boolean, :errorCode as Communications.WifiConnectionStatus}) as Void{
+        if (result[:wifiAvailable]) {
+            self.makeRequest();
+        }
     }
 
     function onMenu() as Boolean {
@@ -68,6 +75,14 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
             }
         };
 
+        var settings = System.getDeviceSettings();
+        var cinfo = settings.connectionInfo;
+        if (cinfo instanceof Dictionary) {
+            var keys = cinfo.keys();
+            for (var i = 0 ; i < keys.size(); i++) {
+                System.println(keys[i].toString() + ": " + cinfo[keys[i]].state);
+            }
+        }
         Communications.makeWebRequest(
             url,
             params,
@@ -90,6 +105,8 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
             // Update view
         } else {
             // Update view
+            _view.circleColor = Graphics.COLOR_DK_RED;
+            System.println("failure: " + responseCode);
         }
     }
 
