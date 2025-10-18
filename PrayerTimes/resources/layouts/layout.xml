@@ -1,58 +1,12 @@
 <layout id="MainLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
 
-    <label 
-    id='AppTitle' 
-    text='@Strings.title'
-    x='20%'
-    y='15%'
-    font='Gfx.FONT_SMALL'
-    />
-
     <bitmap 
     id='title_underline' 
     x='center' 
     y='25%' 
     filename='../drawables/random_underline.png' 
     />
-
-    <label 
-    id='Fajr' 
-    text='@Strings.text_fajr'
-    x='20%'
-    y='32%'
-    font='Gfx.FONT_TINY'
-    />
-    <label 
-    id='Dhuhr' 
-    text='@Strings.text_dhuhr'
-    x='20%'
-    y='44%'
-    font='Gfx.FONT_TINY'
-    />
-    <label 
-    id='Asr' 
-    text='@Strings.text_asr'
-    x='20%'
-    y='56%'
-    font='Gfx.FONT_TINY'
-    />
-    <label 
-    id='Maghrib' 
-    text='@Strings.text_maghrib'
-    x='20%'
-    y='68%'
-    font='Gfx.FONT_TINY'
-    />
-    <label 
-    id='Isha' 
-    text='@Strings.text_isha'
-    x='20%'
-    y='80%'
-    font='Gfx.FONT_TINY'
-    />
-
-    <!-- <drawable id="gpsCircle" ></drawable> -->
 
 
 </layout>

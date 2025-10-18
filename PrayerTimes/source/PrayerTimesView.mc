@@ -36,7 +36,7 @@ class PrayerTimesView extends WatchUi.View {
     function drawTitle(dc as Dc) {
         var x = dc.getWidth() * .2;
         var y = dc.getHeight() * .15;
-        var text = WatchUi.loadResource(Rez.Strings.title);
+        var text = WatchUi.loadResource(Rez.Strings.AppName);
         dc.drawText(x, y , Graphics.FONT_SMALL, text ,Graphics.TEXT_JUSTIFY_LEFT);
     }
 

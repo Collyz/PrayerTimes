@@ -1,13 +1,20 @@
 <strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <string id="AppName">Prayer Times</string>
 
-    <string id='title'>Prayer Times</string>
+    <string id='MenuTitle'>Prayer Times</string>
+    <string id='LabelFajr'>Fajr:</string>
+    <string id='LabelDhuhr'>Dhujr:</string>
+    <string id='LabelAsr'>Asr:</string>
+    <string id='LabelMaghrib'>Maghrib:</string>
+    <string id='LabelIsha'>Isha:</string>
 
-    <string id='text_fajr'>Fajr:</string>
-    <string id='text_dhuhr'>Dhujr:</string>
-    <string id='text_asr'>Asr:</string>
-    <string id='text_maghrib'>Maghrib:</string>
-    <string id='text_isha'>Isha:</string>
+    <string id='SettingsTitle'>Settings</string>
+
+    <string id='GetTimes'>Get Times</string>
+    <string id='Set24'>24-Hour Format</string>
+    <string id='Set12'>12-Hour Format</string>
+    <string id='ClearTimes'>Clear Times</string>
+    
 
     
 </strings>

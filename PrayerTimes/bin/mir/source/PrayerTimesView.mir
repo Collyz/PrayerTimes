@@ -147,8 +147,8 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTim
         %tmp.14 = getv ? :Rez;
         symbol [ Strings %tmp.15 39 44 51 ];
         %tmp.15 = getv %tmp.14 :Strings;
-        symbol [ title %tmp.16 39 52 57 ];
-        %tmp.16 = getv %tmp.15 :title;
+        symbol [ AppName %tmp.16 39 52 59 ];
+        %tmp.16 = getv %tmp.15 :AppName;
         %tmp.17 = invoke %tmp.11 %tmp.12(%tmp.16);
         lputv %text.3 %tmp.17;
         symbol [ text %text.3 39 12 16 ];

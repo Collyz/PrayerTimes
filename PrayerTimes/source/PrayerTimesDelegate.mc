@@ -32,7 +32,8 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onMenu() as Boolean {
-        _view.circleColor = Graphics.COLOR_YELLOW;
+        WatchUi.pushView(new $.Rez.Menus.SettingsMenu() as Menu2, new $.SettingsMenuDelegate(), WatchUi.SLIDE_UP);
+        // _view.circleColor = Graphics.COLOR_YELLOW;
         Position.enableLocationEvents(Position.LOCATION_ONE_SHOT, method(:onPosition));
         return true;
     }

@@ -1,4 +1,11 @@
-<menu id="MainMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
-    <menu-item id="item_1" label="@Strings.text_fajr" />
-    <menu-item id="item_2" label="@Strings.text_fajr" />
-</menu>
+<menu2
+    id="SettingsMenu" 
+    title="@Strings.SettingsTitle"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd"
+    >
+    <menu-item id="GetTimes" label="@Strings.GetTimes" />
+    <menu-item id="Hour24" label="@Strings.Set24" />
+    <menu-item id="Hour12" label="@Strings.Set12" />
+    <menu-item id="ClearTimes" label="@Strings.ClearTimes" />
+</menu2>
