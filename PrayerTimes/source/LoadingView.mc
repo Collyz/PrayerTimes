@@ -46,7 +46,7 @@ class LoadingView extends WatchUi.View {
     function loadingStatus(dc as Dc) as Void {
         // Draw centered text
         dc.clear();
-        var text = _statusMsg + _periods;
+        var text = _statusMsg + "\n" + _periods;
         var textWidth = dc.getTextWidthInPixels(text, _font);
         var x = (dc.getWidth() - textWidth ) /2;
         var y = (dc.getHeight() / 2);
