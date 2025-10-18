@@ -69,16 +69,4 @@ class PrayerTimesView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
     }
 
-    public function setPosition(info as Info) as Void {
-        var position = info.position;
-        if (position != null){
-            circleColor = Graphics.COLOR_GREEN;
-            var data = position.toDegrees();
-            lat = data[0];
-            lon = data[1];
-        } else {
-            circleColor = Graphics.COLOR_RED;
-        }
-    }
-
 }

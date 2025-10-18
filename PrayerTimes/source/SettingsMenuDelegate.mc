@@ -9,6 +9,8 @@ class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onSelect(item as MenuItem) {
-        System.println(item.getId());
+        var id = item.getId() as String;
+        System.println(id);
+        System.println(id.toString());
     }
 }

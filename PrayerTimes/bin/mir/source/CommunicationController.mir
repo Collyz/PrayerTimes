@@ -1,0 +1,536 @@
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Time,2,14,18]; ]
+import Toybox.Time;
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Position,4,14,22]; ]
+import Toybox.Position;
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [WatchUi,5,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Communications,6,14,28]; ]
+import Toybox.Communications;
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 8; @symbol_classdef = [CommunicationsController,8,6,30]; ]
+class CommunicationsController {
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 10; @symbol_functiondef = [checkWifiStatus,10,20,35]; ]
+    public
+    function checkWifiStatus() as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_10_46_12_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 11 8 ]
+        symbol [ Communications %tmp.1 11 8 22 ];
+        %tmp.1 = getm $.Toybox.Communications;
+        symbol [ checkWifiConnection %tmp.2 11 23 42 ];
+        %tmp.2 = getv function %tmp.1 :checkWifiConnection;
+        %tmp.3 = self;
+        symbol [ method %tmp.4 11 43 49 ];
+        %tmp.4 = getv function %tmp.3 :method;
+        %tmp.6 = const :onWifiCallback;
+        symbol [ onWifiCallback %tmp.6 11 51 65 const ];
+        %tmp.7 = invoke %tmp.3 %tmp.4(%tmp.6);
+        invoke %tmp.1 %tmp.2(%tmp.7);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_10_46_12_4_stop:
+    }
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 14; @symbol_functiondef = [checkGPS,14,20,28]; ]
+    public
+    function checkGPS() as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_14_39_16_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 15 8 ]
+        symbol [ Position %tmp.1 15 8 16 ];
+        %tmp.1 = getm $.Toybox.Position;
+        symbol [ enableLocationEvents %tmp.2 15 17 37 ];
+        %tmp.2 = getv function %tmp.1 :enableLocationEvents;
+        symbol [ Position %tmp.3 15 38 46 ];
+        %tmp.3 = getm $.Toybox.Position;
+        symbol [ LOCATION_ONE_SHOT %tmp.4 15 47 64 ];
+        %tmp.4 = getv %tmp.3 :LOCATION_ONE_SHOT;
+        %tmp.5 = self;
+        symbol [ method %tmp.6 15 66 72 ];
+        %tmp.6 = getv function %tmp.5 :method;
+        %tmp.8 = const :onPosition;
+        symbol [ onPosition %tmp.8 15 74 84 const ];
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.9);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_14_39_16_4_stop:
+    }
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 19; @symbol_functiondef = [onPosition,19,20,30]; @symbol_param<0> = [info,19,31,35]; @symbol_param<0>_type<0> = [Info,19,39,43]; ]
+    public
+    function onPosition(info as Info) as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_19_53_29_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 20 8 ]
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_19_53_29_4_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_19_53_29_4_stop" ]
+        %position.1 = local;
+        symbol [ position %position.1 20 12 20 ];
+        %tmp.1 = lgetv %info;
+        symbol [ info %tmp.1 20 23 27 ];
+        symbol [ position %tmp.2 20 28 36 ];
+        %tmp.2 = getv %tmp.1 :position;
+        lputv %position.1 %tmp.2;
+        symbol [ position %position.1 20 12 20 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 21 8 ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_8_28_8_if_stmt:
+        %tmp.3 = lgetv %position.1;
+        symbol [ position %tmp.3 21 12 20 ];
+        %tmp.4 = null;
+        %tmp.5 = ne %tmp.3 %tmp.4;
+        bf %tmp.5 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_8_28_8_if_else_false;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_8_28_8_if_true:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_29_26_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 22 12 ]
+        symbol [ Graphics %tmp.7 22 26 34 ];
+        %tmp.7 = getv ? :Graphics;
+        symbol [ COLOR_GREEN %tmp.8 22 35 46 ];
+        %tmp.8 = getv %tmp.7 :COLOR_GREEN;
+        symbol [ circleColor ? 22 12 23 ];
+        putv self :circleColor %tmp.8;
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 23 12 ]
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_29_26_8_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_29_26_8_stop" ]
+        %data.2 = local;
+        symbol [ data %data.2 23 16 20 ];
+        %tmp.9 = lgetv %position.1;
+        symbol [ position %tmp.9 23 23 31 ];
+        %tmp.10 = as %tmp.9 { (!Null) };
+        symbol [ toDegrees %tmp.11 23 32 41 ];
+        %tmp.11 = getv function %tmp.10 :toDegrees;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        lputv %data.2 %tmp.12;
+        symbol [ data %data.2 23 16 20 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 24 12 ]
+        %tmp.13 = lgetv %data.2;
+        symbol [ data %tmp.13 24 18 22 ];
+        %tmp.14 = 0;
+        %tmp.15 = agetv %tmp.13 %tmp.14;
+        symbol [ lat ? 24 12 15 ];
+        putv self :lat %tmp.15;
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 25 12 ]
+        %tmp.16 = lgetv %data.2;
+        symbol [ data %tmp.16 25 18 22 ];
+        %tmp.17 = 1;
+        %tmp.18 = agetv %tmp.16 %tmp.17;
+        symbol [ lon ? 25 12 15 ];
+        putv self :lon %tmp.18;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_29_26_8_stop:
+        goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_8_28_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_8_28_8_if_else_false:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_26_15_28_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 27 12 ]
+        symbol [ Graphics %tmp.20 27 26 34 ];
+        %tmp.20 = getv ? :Graphics;
+        symbol [ COLOR_RED %tmp.21 27 35 44 ];
+        %tmp.21 = getv %tmp.20 :COLOR_RED;
+        symbol [ circleColor ? 27 12 23 ];
+        putv self :circleColor %tmp.21;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_26_15_28_8_stop:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_21_8_28_8_if_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_19_53_29_4_stop:
+    }
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 31; @symbol_functiondef = [onWifiCallback,31,20,34]; @symbol_param<0> = [result,31,35,41]; @symbol_param<0>_type<0> = [Boolean,31,64,71]; @symbol_param<0>_type<1> = [Communications,31,87,101]; @symbol_param<0>_type<2> = [WifiConnectionStatus,31,102,122]; @symbol_param<0>_type_const<0> = [wifiAvailable,31,47,60]; @symbol_param<0>_type_const<1> = [errorCode,31,74,83]; ]
+    public
+    function onWifiCallback(result as {:wifiAvailable as Boolean, :errorCode as Communications.WifiConnectionStatus}) as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_31_132_35_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 32 8 ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_32_8_34_8_if_stmt:
+    %tmp.1 = lgetv %result;
+    symbol [ result %tmp.1 32 12 18 ];
+    %tmp.3 = const :wifiAvailable;
+    symbol [ wifiAvailable %tmp.3 32 20 33 const ];
+    %tmp.4 = agetv %tmp.1 %tmp.3;
+    bf %tmp.4 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_32_8_34_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_32_8_34_8_if_true:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_32_36_34_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 33 12 ]
+    %tmp.5 = self;
+    symbol [ self %tmp.5 33 12 16 ];
+    symbol [ makeRequest %tmp.6 33 17 28 ];
+    %tmp.6 = getv function %tmp.5 :makeRequest;
+    invoke %tmp.5 %tmp.6();
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_32_36_34_8_stop:
+    goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_32_8_34_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_32_8_34_8_if_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_31_132_35_4_stop:
+}
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 37; @symbol_functiondef = [getUTCOffset,37,20,32]; @symbol_return<0> = [Float,37,38,43]; ]
+public
+function getUTCOffset() as Float {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_37_44_40_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 39 8 ]
+    symbol [ System %tmp.1 39 15 21 ];
+    %tmp.1 = getm $.Toybox.System;
+    symbol [ getClockTime %tmp.2 39 22 34 ];
+    %tmp.2 = getv function %tmp.1 :getClockTime;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    symbol [ timeZoneOffset %tmp.4 39 37 51 ];
+    %tmp.4 = getv %tmp.3 :timeZoneOffset;
+    %tmp.5 = 60.0;
+    %tmp.6 = div %tmp.4 %tmp.5;
+    %tmp.7 = 60.0;
+    %tmp.8 = div %tmp.6 %tmp.7;
+    ret %tmp.8;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_37_44_40_4_stop:
+}
+//! Make the web request
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 43; @symbol_functiondef = [makeRequest,43,21,32]; ]
+private
+function makeRequest() as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 44 8 ]
+    [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_stop" ]
+    %url.1 = local;
+    symbol [ url %url.1 44 12 15 ];
+    %tmp.1 = "https://prayer-api-kappa.vercel.app/praytime";
+    lputv %url.1 %tmp.1;
+    symbol [ url %url.1 44 12 15 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 45 8 ]
+    [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_stop" ]
+    %params.2 = local;
+    symbol [ params %params.2 45 12 18 ];
+    %tmp.2 = newd 3;
+    %tmp.3 = "lat";
+    symbol [ lat %tmp.5 46 21 24 ];
+    %tmp.5 = getv ? :lat;
+    %tmp.6 = dup %tmp.2;
+    %tmp.7 = aputv %tmp.6 %tmp.3 %tmp.5;
+    %tmp.8 = "lon";
+    symbol [ lon %tmp.10 47 21 24 ];
+    %tmp.10 = getv ? :lon;
+    %tmp.11 = dup %tmp.7;
+    %tmp.12 = aputv %tmp.11 %tmp.8 %tmp.10;
+    %tmp.13 = "utcOffset";
+    %tmp.14 = self;
+    symbol [ getUTCOffset %tmp.15 48 27 39 ];
+    %tmp.15 = getv function %tmp.14 :getUTCOffset;
+    %tmp.16 = invoke %tmp.14 %tmp.15();
+    %tmp.17 = dup %tmp.12;
+    %tmp.18 = aputv %tmp.17 %tmp.13 %tmp.16;
+    lputv %params.2 %tmp.18;
+    symbol [ params %params.2 45 12 18 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 50 8 ]
+    [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_stop" ]
+    %options.3 = local;
+    symbol [ options %options.3 50 12 19 ];
+    %tmp.19 = newd 3;
+    %tmp.21 = const :method;
+    symbol [ method %tmp.21 51 13 19 const ];
+    symbol [ Communications %tmp.22 51 23 37 ];
+    %tmp.22 = getm $.Toybox.Communications;
+    symbol [ HTTP_REQUEST_METHOD_POST %tmp.23 51 38 62 ];
+    %tmp.23 = getv %tmp.22 :HTTP_REQUEST_METHOD_POST;
+    %tmp.24 = dup %tmp.19;
+    %tmp.25 = aputv %tmp.24 %tmp.21 %tmp.23;
+    %tmp.27 = const :responseType;
+    symbol [ responseType %tmp.27 52 13 25 const ];
+    symbol [ Communications %tmp.28 52 29 43 ];
+    %tmp.28 = getm $.Toybox.Communications;
+    symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.29 52 44 75 ];
+    %tmp.29 = getv %tmp.28 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+    %tmp.30 = dup %tmp.25;
+    %tmp.31 = aputv %tmp.30 %tmp.27 %tmp.29;
+    %tmp.33 = const :headers;
+    symbol [ headers %tmp.33 53 13 20 const ];
+    %tmp.34 = newd 1;
+    %tmp.35 = "Content-Type";
+    symbol [ Communications %tmp.36 54 34 48 ];
+    %tmp.36 = getm $.Toybox.Communications;
+    symbol [ REQUEST_CONTENT_TYPE_JSON %tmp.37 54 49 74 ];
+    %tmp.37 = getv %tmp.36 :REQUEST_CONTENT_TYPE_JSON;
+    %tmp.38 = dup %tmp.34;
+    %tmp.39 = aputv %tmp.38 %tmp.35 %tmp.37;
+    %tmp.40 = dup %tmp.31;
+    %tmp.41 = aputv %tmp.40 %tmp.33 %tmp.39;
+    lputv %options.3 %tmp.41;
+    symbol [ options %options.3 50 12 19 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 58 8 ]
+    [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_stop" ]
+    %settings.4 = local;
+    symbol [ settings %settings.4 58 12 20 ];
+    symbol [ System %tmp.42 58 23 29 ];
+    %tmp.42 = getm $.Toybox.System;
+    symbol [ getDeviceSettings %tmp.43 58 30 47 ];
+    %tmp.43 = getv function %tmp.42 :getDeviceSettings;
+    %tmp.44 = invoke %tmp.42 %tmp.43();
+    lputv %settings.4 %tmp.44;
+    symbol [ settings %settings.4 58 12 20 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 59 8 ]
+    [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_stop" ]
+    %cinfo.5 = local;
+    symbol [ cinfo %cinfo.5 59 12 17 ];
+    %tmp.45 = lgetv %settings.4;
+    symbol [ settings %tmp.45 59 20 28 ];
+    symbol [ connectionInfo %tmp.46 59 29 43 ];
+    %tmp.46 = getv %tmp.45 :connectionInfo;
+    lputv %cinfo.5 %tmp.46;
+    symbol [ cinfo %cinfo.5 59 12 17 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 60 8 ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_60_8_65_8_if_stmt:
+    %tmp.47 = lgetv %cinfo.5;
+    symbol [ cinfo %tmp.47 60 12 17 ];
+    symbol [ Dictionary %tmp.49 60 29 39 ];
+    %tmp.49 = getv ? :Dictionary;
+    %tmp.50 = isa %tmp.47 %tmp.49;
+    bf %tmp.50 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_60_8_65_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_60_8_65_8_if_true:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_60_41_65_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 61 12 ]
+    [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_60_41_65_8_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_60_41_65_8_stop" ]
+    %keys.6 = local;
+    symbol [ keys %keys.6 61 16 20 ];
+    %tmp.51 = lgetv %cinfo.5;
+    symbol [ cinfo %tmp.51 61 23 28 ];
+    %tmp.52 = as %tmp.51 { (Dictionary) };
+    symbol [ keys %tmp.53 61 29 33 ];
+    %tmp.53 = getv function %tmp.52 :keys;
+    %tmp.54 = invoke %tmp.52 %tmp.53();
+    lputv %keys.6 %tmp.54;
+    symbol [ keys %keys.6 61 16 20 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 62 12 ]
+    for @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_test @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_incr @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_init:
+    [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_begin" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_end" ]
+    %i.7 = local;
+    symbol [ i %i.7 62 21 22 ];
+    %tmp.55 = 0;
+    lputv %i.7 %tmp.55;
+    symbol [ i %i.7 62 21 22 ];
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_test:
+    %tmp.56 = lgetv %i.7;
+    symbol [ i %tmp.56 62 29 30 ];
+    %tmp.57 = lgetv %keys.6;
+    symbol [ keys %tmp.57 62 33 37 ];
+    symbol [ size %tmp.58 62 38 42 ];
+    %tmp.58 = getv function %tmp.57 :size;
+    %tmp.59 = invoke %tmp.57 %tmp.58();
+    %tmp.60 = lt %tmp.56 %tmp.59;
+    bf %tmp.60 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_begin:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_51_64_12_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 63 16 ]
+    symbol [ System %tmp.61 63 16 22 ];
+    %tmp.61 = getm $.Toybox.System;
+    symbol [ println %tmp.62 63 23 30 ];
+    %tmp.62 = getv function %tmp.61 :println;
+    %tmp.63 = lgetv %keys.6;
+    symbol [ keys %tmp.63 63 31 35 ];
+    %tmp.64 = lgetv %i.7;
+    symbol [ i %tmp.64 63 36 37 ];
+    %tmp.65 = agetv %tmp.63 %tmp.64;
+    symbol [ toString %tmp.66 63 39 47 ];
+    %tmp.66 = getv function %tmp.65 :toString;
+    %tmp.67 = invoke %tmp.65 %tmp.66();
+    %tmp.68 = ": ";
+    %tmp.69 = add %tmp.67 %tmp.68;
+    %tmp.70 = lgetv %cinfo.5;
+    symbol [ cinfo %tmp.70 63 59 64 ];
+    %tmp.71 = as %tmp.70 { (Dictionary) };
+    %tmp.72 = lgetv %keys.6;
+    symbol [ keys %tmp.72 63 65 69 ];
+    %tmp.73 = lgetv %i.7;
+    symbol [ i %tmp.73 63 70 71 ];
+    %tmp.74 = agetv %tmp.72 %tmp.73;
+    %tmp.75 = agetv %tmp.71 %tmp.74;
+    symbol [ state %tmp.76 63 74 79 ];
+    %tmp.76 = getv %tmp.75 :state;
+    %tmp.77 = add %tmp.69 %tmp.76;
+    invoke %tmp.61 %tmp.62(%tmp.77);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_51_64_12_stop:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_incr:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 62 ]
+    %tmp.80 = lgetv %i.7;
+    symbol [ i %tmp.80 62 46 47 ];
+    %tmp.81 = add %tmp.80 1;
+    lputv %i.7 %tmp.81;
+    symbol [ i %i.7 62 46 47 ];
+    goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_test;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_62_12_64_12_for_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_60_41_65_8_stop:
+    goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_60_8_65_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_60_8_65_8_if_end:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 66 8 ]
+    symbol [ Communications %tmp.82 66 8 22 ];
+    %tmp.82 = getm $.Toybox.Communications;
+    symbol [ makeWebRequest %tmp.83 66 23 37 ];
+    %tmp.83 = getv function %tmp.82 :makeWebRequest;
+    %tmp.84 = lgetv %url.1;
+    symbol [ url %tmp.84 67 12 15 ];
+    %tmp.85 = lgetv %params.2;
+    symbol [ params %tmp.85 68 12 18 ];
+    %tmp.86 = lgetv %options.3;
+    symbol [ options %tmp.86 69 12 19 ];
+    %tmp.87 = self;
+    symbol [ method %tmp.88 70 12 18 ];
+    %tmp.88 = getv function %tmp.87 :method;
+    %tmp.90 = const :onReceive;
+    symbol [ onReceive %tmp.90 70 20 29 const ];
+    %tmp.91 = invoke %tmp.87 %tmp.88(%tmp.90);
+    invoke %tmp.82 %tmp.83(%tmp.84, %tmp.85, %tmp.86, %tmp.91);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_43_43_72_4_stop:
+}
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 74; @symbol_functiondef = [onReceive,74,20,29]; @symbol_param<0> = [responseCode,74,30,42]; @symbol_param<0>_type<0> = [Number,74,46,52]; @symbol_param<1> = [data,74,54,58]; @symbol_param<1>_type<0> = [Dictionary,74,62,72]; @symbol_param<1>_type<1> = [String,74,76,82]; ]
+public
+function onReceive(responseCode as Number, data as Dictionary or String or Null) as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_74_100_91_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 75 8 ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_75_8_90_8_if_stmt:
+    %tmp.1 = lgetv %responseCode;
+    symbol [ responseCode %tmp.1 75 12 24 ];
+    %tmp.2 = 200;
+    %tmp.3 = eq %tmp.1 %tmp.2;
+    bf %tmp.3 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_75_8_90_8_if_else_false;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_75_8_90_8_if_true:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_75_33_86_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 77 12 ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_77_12_83_12_if_stmt:
+    %tmp.4 = lgetv %data;
+    symbol [ data %tmp.4 77 16 20 ];
+    symbol [ Dictionary %tmp.6 77 32 42 ];
+    %tmp.6 = getv ? :Dictionary;
+    %tmp.7 = isa %tmp.4 %tmp.6;
+    bf %tmp.7 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_77_12_83_12_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_77_12_83_12_if_true:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_77_44_83_12_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 78 16 ]
+    %tmp.8 = self;
+    symbol [ self %tmp.8 78 16 20 ];
+    symbol [ updateLabel %tmp.9 78 21 32 ];
+    %tmp.9 = getv function %tmp.8 :updateLabel;
+    symbol [ labelKeys %tmp.11 78 33 42 ];
+    %tmp.11 = getv ? :labelKeys;
+    %tmp.12 = 0;
+    %tmp.13 = agetv %tmp.11 %tmp.12;
+    %tmp.14 = lgetv %data;
+    symbol [ data %tmp.14 78 47 51 ];
+    %tmp.15 = as %tmp.14 { (Dictionary) };
+    %tmp.16 = "fajr";
+    %tmp.17 = agetv %tmp.15 %tmp.16;
+    invoke %tmp.8 %tmp.9(%tmp.13, %tmp.17);
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 79 16 ]
+    %tmp.18 = self;
+    symbol [ self %tmp.18 79 16 20 ];
+    symbol [ updateLabel %tmp.19 79 21 32 ];
+    %tmp.19 = getv function %tmp.18 :updateLabel;
+    symbol [ labelKeys %tmp.21 79 33 42 ];
+    %tmp.21 = getv ? :labelKeys;
+    %tmp.22 = 1;
+    %tmp.23 = agetv %tmp.21 %tmp.22;
+    %tmp.24 = lgetv %data;
+    symbol [ data %tmp.24 79 47 51 ];
+    %tmp.25 = as %tmp.24 { (Dictionary) };
+    %tmp.26 = "dhuhr";
+    %tmp.27 = agetv %tmp.25 %tmp.26;
+    invoke %tmp.18 %tmp.19(%tmp.23, %tmp.27);
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 80 16 ]
+    %tmp.28 = self;
+    symbol [ self %tmp.28 80 16 20 ];
+    symbol [ updateLabel %tmp.29 80 21 32 ];
+    %tmp.29 = getv function %tmp.28 :updateLabel;
+    symbol [ labelKeys %tmp.31 80 33 42 ];
+    %tmp.31 = getv ? :labelKeys;
+    %tmp.32 = 2;
+    %tmp.33 = agetv %tmp.31 %tmp.32;
+    %tmp.34 = lgetv %data;
+    symbol [ data %tmp.34 80 47 51 ];
+    %tmp.35 = as %tmp.34 { (Dictionary) };
+    %tmp.36 = "asr";
+    %tmp.37 = agetv %tmp.35 %tmp.36;
+    invoke %tmp.28 %tmp.29(%tmp.33, %tmp.37);
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 81 16 ]
+    %tmp.38 = self;
+    symbol [ self %tmp.38 81 16 20 ];
+    symbol [ updateLabel %tmp.39 81 21 32 ];
+    %tmp.39 = getv function %tmp.38 :updateLabel;
+    symbol [ labelKeys %tmp.41 81 33 42 ];
+    %tmp.41 = getv ? :labelKeys;
+    %tmp.42 = 3;
+    %tmp.43 = agetv %tmp.41 %tmp.42;
+    %tmp.44 = lgetv %data;
+    symbol [ data %tmp.44 81 47 51 ];
+    %tmp.45 = as %tmp.44 { (Dictionary) };
+    %tmp.46 = "maghrib";
+    %tmp.47 = agetv %tmp.45 %tmp.46;
+    invoke %tmp.38 %tmp.39(%tmp.43, %tmp.47);
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 82 16 ]
+    %tmp.48 = self;
+    symbol [ self %tmp.48 82 16 20 ];
+    symbol [ updateLabel %tmp.49 82 21 32 ];
+    %tmp.49 = getv function %tmp.48 :updateLabel;
+    symbol [ labelKeys %tmp.51 82 33 42 ];
+    %tmp.51 = getv ? :labelKeys;
+    %tmp.52 = 4;
+    %tmp.53 = agetv %tmp.51 %tmp.52;
+    %tmp.54 = lgetv %data;
+    symbol [ data %tmp.54 82 47 51 ];
+    %tmp.55 = as %tmp.54 { (Dictionary) };
+    %tmp.56 = "isha";
+    %tmp.57 = agetv %tmp.55 %tmp.56;
+    invoke %tmp.48 %tmp.49(%tmp.53, %tmp.57);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_77_44_83_12_stop:
+    goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_77_12_83_12_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_77_12_83_12_if_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_75_33_86_8_stop:
+    goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_75_8_90_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_75_8_90_8_if_else_false:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_86_15_90_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 88 12 ]
+    symbol [ Graphics %tmp.59 88 26 34 ];
+    %tmp.59 = getv ? :Graphics;
+    symbol [ COLOR_DK_RED %tmp.60 88 35 47 ];
+    %tmp.60 = getv %tmp.59 :COLOR_DK_RED;
+    symbol [ circleColor ? 88 12 23 ];
+    putv self :circleColor %tmp.60;
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 89 12 ]
+    symbol [ System %tmp.61 89 12 18 ];
+    %tmp.61 = getm $.Toybox.System;
+    symbol [ println %tmp.62 89 19 26 ];
+    %tmp.62 = getv function %tmp.61 :println;
+    %tmp.63 = "failure: ";
+    %tmp.64 = lgetv %responseCode;
+    symbol [ responseCode %tmp.64 89 41 53 ];
+    %tmp.65 = add %tmp.63 %tmp.64;
+    invoke %tmp.61 %tmp.62(%tmp.65);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_86_15_90_8_stop:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_75_8_90_8_if_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_74_100_91_4_stop:
+}
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 94; @symbol_functiondef = [updateLabel,94,13,24]; @symbol_param<0> = [key,94,25,28]; @symbol_param<0>_type<0> = [Lang,94,32,36]; @symbol_param<0>_type<1> = [String,94,37,43]; @symbol_param<1> = [updateValue,94,45,56]; ]
+function updateLabel(key as Lang.String, updateValue) as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_94_66_99_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 95 8 ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_95_8_98_8_if_stmt:
+    %tmp.1 = lgetv %updateValue;
+    symbol [ updateValue %tmp.1 95 12 23 ];
+    %tmp.2 = null;
+    %tmp.3 = ne %tmp.1 %tmp.2;
+    bf %tmp.3 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_95_8_98_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_95_8_98_8_if_true:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_95_33_98_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 96 12 ]
+    symbol [ storageManager %tmp.5 96 12 26 ];
+    %tmp.5 = getv ? :storageManager;
+    symbol [ updateValue %tmp.6 96 27 38 ];
+    %tmp.6 = getv function %tmp.5 :updateValue;
+    %tmp.7 = lgetv %key;
+    symbol [ key %tmp.7 96 39 42 ];
+    %tmp.8 = lgetv %updateValue;
+    symbol [ updateValue %tmp.8 96 44 55 ];
+    %tmp.9 = as %tmp.8 { (!Null) };
+    invoke %tmp.5 %tmp.6(%tmp.7, %tmp.9);
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 97 12 ]
+    symbol [ WatchUi %tmp.10 97 12 19 ];
+    %tmp.10 = getm $.Toybox.WatchUi;
+    symbol [ requestUpdate %tmp.11 97 20 33 ];
+    %tmp.11 = getv function %tmp.10 :requestUpdate;
+    invoke %tmp.10 %tmp.11();
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_95_33_98_8_stop:
+    goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_95_8_98_8_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_95_8_98_8_if_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_94_66_99_4_stop:
+}
+}
+[ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 1; ]
+<init> {
+}

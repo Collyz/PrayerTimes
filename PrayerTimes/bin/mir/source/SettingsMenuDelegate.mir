@@ -26,19 +26,40 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsM
     }
     [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\SettingsMenuDelegate.mc"; @line = 11; @symbol_functiondef = [onSelect,11,13,21]; @symbol_param<0> = [item,11,22,26]; @symbol_param<0>_type<0> = [MenuItem,11,30,38]; ]
     function onSelect(item as MenuItem) {
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_11_40_13_4_start:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_11_40_15_4_start:
 [ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\SettingsMenuDelegate.mc" 12 8 ]
-        symbol [ System %tmp.1 12 8 14 ];
-        %tmp.1 = getm $.Toybox.System;
-        symbol [ println %tmp.2 12 15 22 ];
-        %tmp.2 = getv function %tmp.1 :println;
-        %tmp.3 = lgetv %item;
-        symbol [ item %tmp.3 12 23 27 ];
-        symbol [ getId %tmp.4 12 28 33 ];
-        %tmp.4 = getv function %tmp.3 :getId;
-        %tmp.5 = invoke %tmp.3 %tmp.4();
-        invoke %tmp.1 %tmp.2(%tmp.5);
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_11_40_13_4_stop:
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_11_40_15_4_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_11_40_15_4_stop" ]
+        %id.1 = local;
+        symbol [ id %id.1 12 12 14 ];
+        %tmp.1 = lgetv %item;
+        symbol [ item %tmp.1 12 17 21 ];
+        symbol [ getId %tmp.2 12 22 27 ];
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = as %tmp.3 String;
+        symbol [ String %tmp.4 12 33 39 ];
+        lputv %id.1 %tmp.4;
+        symbol [ id %id.1 12 12 14 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\SettingsMenuDelegate.mc" 13 8 ]
+        symbol [ System %tmp.5 13 8 14 ];
+        %tmp.5 = getm $.Toybox.System;
+        symbol [ println %tmp.6 13 15 22 ];
+        %tmp.6 = getv function %tmp.5 :println;
+        %tmp.7 = lgetv %id.1;
+        symbol [ id %tmp.7 13 23 25 ];
+        invoke %tmp.5 %tmp.6(%tmp.7);
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\SettingsMenuDelegate.mc" 14 8 ]
+        symbol [ System %tmp.8 14 8 14 ];
+        %tmp.8 = getm $.Toybox.System;
+        symbol [ println %tmp.9 14 15 22 ];
+        %tmp.9 = getv function %tmp.8 :println;
+        %tmp.10 = lgetv %id.1;
+        symbol [ id %tmp.10 14 23 25 ];
+        symbol [ toString %tmp.11 14 26 34 ];
+        %tmp.11 = getv function %tmp.10 :toString;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        invoke %tmp.8 %tmp.9(%tmp.12);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_11_40_15_4_stop:
     }
 }
 [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\SettingsMenuDelegate.mc"; @line = 1; ]

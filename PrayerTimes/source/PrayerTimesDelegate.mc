@@ -7,104 +7,23 @@ import Toybox.Communications;
 class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
     
     var _view;
-    var count = 0;
-
-    var responseKeys = ["fajr", "dhuhr", "asr", "maghrib", "isha"];
 
     function initialize(view as PrayerTimesView) {
         _view = view;
         BehaviorDelegate.initialize();
     }
 
-    function onKeyPressed(keyEvent as KeyEvent) as Boolean {
-        // If the key pressed is the ENTER key
-        if (keyEvent.getKey() == KEY_ENTER) {
-            Communications.checkWifiConnection(method(:onWifiCallback));
-            self.makeRequest();
-        }
-        return true;
-    }
-
-    function onWifiCallback(result as {:wifiAvailable as Boolean, :errorCode as Communications.WifiConnectionStatus}) as Void{
-        if (result[:wifiAvailable]) {
-            self.makeRequest();
-        }
-    }
 
     function onMenu() as Boolean {
-        WatchUi.pushView(new $.Rez.Menus.SettingsMenu() as Menu2, new $.SettingsMenuDelegate(), WatchUi.SLIDE_UP);
-        // _view.circleColor = Graphics.COLOR_YELLOW;
-        Position.enableLocationEvents(Position.LOCATION_ONE_SHOT, method(:onPosition));
+        var settingsMenu = new WatchUi.Menu2(
+            {:title => Rez.Strings.SettingsTitle}
+            );
+        settingsMenu.addItem(new WatchUi.MenuItem(Rez.Strings.GetTimes, null, "getTimes", null));
+        settingsMenu.addItem(new WatchUi.MenuItem(Rez.Strings.Set24, null, "set24", null));
+        settingsMenu.addItem(new WatchUi.MenuItem(Rez.Strings.Set12, null, "set12", null));
+        settingsMenu.addItem(new WatchUi.MenuItem(Rez.Strings.ClearTimes, null, "clearTimes", null));
+        WatchUi.pushView(settingsMenu, new $.SettingsMenuDelegate(), WatchUi.SLIDE_UP);
         return true;
-    }
-
-    public function onPosition(info as Info) as Void {
-       
-        _view.setPosition(info);
-    }
-
-    public function getUTCOffset() as Float {
-        // Gets the UTC offset in seconds and converts it to hours offset
-        return System.getClockTime().timeZoneOffset / 60.0 / 60.0;
-    }
-
-    //! Make the web request
-    private function makeRequest() as Void {
-        var url = "https://prayer-api-kappa.vercel.app/praytime";
-        var params = {
-            "lat" => lat,
-            "lon" => lon,
-            "utcOffset" => getUTCOffset()
-        };
-        var options = {
-            :method => Communications.HTTP_REQUEST_METHOD_POST,
-            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON,
-            :headers => {
-                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_JSON
-            }
-        };
-
-        var settings = System.getDeviceSettings();
-        var cinfo = settings.connectionInfo;
-        if (cinfo instanceof Dictionary) {
-            var keys = cinfo.keys();
-            for (var i = 0 ; i < keys.size(); i++) {
-                System.println(keys[i].toString() + ": " + cinfo[keys[i]].state);
-            }
-        }
-        Communications.makeWebRequest(
-            url,
-            params,
-            options,
-            method(:onReceive)
-        );
-    }
-
-    public function onReceive(responseCode as Number, data as Dictionary or String or Null) as Void {
-        if (responseCode == 200) {
-            // System.println(data);
-            if (data instanceof Dictionary) {
-                _view.updateLabel(labelKeys[0], data["fajr"]);
-                _view.updateLabel(labelKeys[1], data["dhuhr"]);
-                _view.updateLabel(labelKeys[2], data["asr"]);
-                _view.updateLabel(labelKeys[3], data["maghrib"]);
-                _view.updateLabel(labelKeys[4], data["isha"]);
-            }
-            
-            // Update view
-        } else {
-            // Update view
-            _view.circleColor = Graphics.COLOR_DK_RED;
-            System.println("failure: " + responseCode);
-        }
-    }
-
-    // Update a single label
-    function updateLabel(key as Lang.String, updateValue) as Void {
-        if (updateValue != null) {
-            storageManager.updateValue(key, updateValue);
-            WatchUi.requestUpdate();
-        }
     }
 
 }
