@@ -46,11 +46,15 @@ class LoadingView extends WatchUi.View {
     function loadingStatus(dc as Dc) as Void {
         // Draw centered text
         dc.clear();
-        var text = _statusMsg + "\n" + _periods;
-        var textWidth = dc.getTextWidthInPixels(text, _font);
-        var x = (dc.getWidth() - textWidth ) /2;
-        var y = (dc.getHeight() / 2);
-        dc.drawText(x, y, _font, text, _just);
+        var statusDimensions = dc.getTextDimensions(_statusMsg, _font);
+        var statusX = (dc.getWidth() - statusDimensions[0] ) /2;
+        var statusY = (dc.getHeight() / 2);
+        dc.drawText(statusX, statusY, _font, _statusMsg, _just);
+
+        var period_width = dc.getTextWidthInPixels(_periods, _font);
+        var periodX = (dc.getWidth()- period_width) / 2;
+        var periodY = (dc.getWidth() / 2) + statusDimensions[1] ;
+        dc.drawText(periodX, periodY, _font, _periods, _just);
     }
 
     function addPeriod() as Void {
