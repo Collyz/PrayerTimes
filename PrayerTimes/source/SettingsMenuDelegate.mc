@@ -26,7 +26,7 @@ class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
         }
     }
 
-    // function onBack() as Void {
-    //     WatchUi.popView(WatchUi.SLIDE_UP);
-    // }
+    function onBack() as Void {
+        WatchUi.popView(WatchUi.SLIDE_UP);
+    }
 }

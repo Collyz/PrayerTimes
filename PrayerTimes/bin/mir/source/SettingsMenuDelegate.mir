@@ -171,6 +171,21 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsM
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_15_8_26_8_if_end:
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_13_40_27_4_stop:
     }
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\SettingsMenuDelegate.mc"; @line = 29; @symbol_functiondef = [onBack,29,13,19]; ]
+    function onBack() as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_29_30_31_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\SettingsMenuDelegate.mc" 30 8 ]
+        symbol [ WatchUi %tmp.1 30 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 30 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 30 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.4 30 32 40 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_29_30_31_4_stop:
+    }
 }
 [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\SettingsMenuDelegate.mc"; @line = 1; ]
 <init> {
