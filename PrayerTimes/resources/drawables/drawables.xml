@@ -11,4 +11,11 @@
     id='menuHint'
     personality='system_icon_dark__hint_button_left_middle system_loc__hint_button_left_middle'
     />
+    
+    <bitmap 
+    id='title_underline' 
+    x='center' 
+    y='25%' 
+    filename='../drawables/random_underline.png' 
+    />
 </drawables>

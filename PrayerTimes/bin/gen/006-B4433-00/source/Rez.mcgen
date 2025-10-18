@@ -37,10 +37,7 @@ module Rez {
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_bitmap_title_underline = new WatchUi.Bitmap({:identifier=>"title_underline", :rezId=>$.Rez.Drawables.title_underline, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>(390 * (25 / 100.0))});
-            rez_cmp_local_bitmap_title_underline.setLocation(((390 - rez_cmp_local_bitmap_title_underline.width) * 0.5), (390 * (25 / 100.0)));
-
-            return [rez_cmp_local_bitmap_title_underline] as Array<WatchUi.Drawable>;
+            return [] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

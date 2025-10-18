@@ -21,13 +21,14 @@ class PrayerTimesView extends WatchUi.View {
 
     function onUpdate(dc as Dc) as Void {
         dc.clear();
+        dc.clearClip();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        drawMenuHint(dc);
         drawTitle(dc);
         drawTitleGraphic(dc);
         drawLabels(dc);
         drawCircle(dc, circleColor);
-        var hint = WatchUi.loadResource(Rez.Drawables.menuHint);
-        dc.drawBitmap(0, dc.getHeight() / 2, hint);
+        
         
         // View.onUpdate(dc); CALL IF USING layout.xml
     }
@@ -36,14 +37,22 @@ class PrayerTimesView extends WatchUi.View {
 
     }
 
-    function drawTitle(dc as Dc) {
+    function drawMenuHint(dc as Dc) as Void {
+        var hint = WatchUi.loadResource(Rez.Drawables.menuHint);
+        var x = Rez.Styles.system_loc__hint_button_left_middle.x;
+        var y = Rez.Styles.system_loc__hint_button_left_middle.y;
+        dc.drawBitmap(x, y, hint);
+
+    }
+
+    function drawTitle(dc as Dc) as Void {
         var x = dc.getWidth() * .2;
         var y = dc.getHeight() * .15;
         var text = WatchUi.loadResource(Rez.Strings.AppName);
         dc.drawText(x, y , Graphics.FONT_SMALL, text ,Graphics.TEXT_JUSTIFY_LEFT);
     }
 
-    function drawTitleGraphic(dc as Dc) {
+    function drawTitleGraphic(dc as Dc) as Void{
         var graphic = WatchUi.loadResource(Rez.Drawables.title_underline);
         var x = (dc.getWidth() - graphic.getWidth()) / 2;
         var y = dc.getHeight() * .25;
