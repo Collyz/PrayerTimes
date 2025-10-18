@@ -8,7 +8,6 @@ public var lat = 0.0;
 public var lon = 0.0;
 public var hasGPS = false as Boolean;
 public var storageManager = new StorageManager();
-public var circleColor = Graphics.COLOR_RED as Graphics.ColorType;
 public var labelKeys as Array<String> = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
 
 class PrayerTimesApp extends Application.AppBase {
@@ -30,7 +29,6 @@ class PrayerTimesApp extends Application.AppBase {
     }
     
     public function cleanUp(info as Info) as Void {
-        circleColor = Graphics.COLOR_LT_GRAY;
     }
     
 

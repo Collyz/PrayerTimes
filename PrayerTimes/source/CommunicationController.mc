@@ -6,31 +6,50 @@ import Toybox.WatchUi;
 import Toybox.Communications;
 
 class CommunicationsController {
-    
+    private var _view as LoadingView?;
+    private var _gpsMsg = "Getting GPS Info";
+    private var _wifiMsg = "Getting Wifi";
+
     public function checkWifiStatus() as Void {
+        // System.println("Started wifi check");
+        _view.setMessage(_wifiMsg);
+        _view.startWifiTimer();
+        _view.resetColors();
+
         Communications.checkWifiConnection(method(:onWifiCallback));
     }
 
-    public function checkGPS() as Void {
+    public function checkGPS(view as LoadingView) as Void {
+        _view = view;
+        _view.setMessage(_gpsMsg);
+        _view.startGPSTimer();
+
         Position.enableLocationEvents(Position.LOCATION_ONE_SHOT, method(:onPosition));
+
+        _view.stopGPSTimer();
+        _view.successCallback("GPS Success", method(:checkWifiStatus));
     }
 
-    
     public function onPosition(info as Info) as Void {  
+        _view.stopGPSTimer();
         var position = info.position;
         if (position != null){
-            circleColor = Graphics.COLOR_GREEN;
             var data = position.toDegrees();
             lat = data[0];
             lon = data[1];
+            _view.successCallback("GPS Success", method(:checkWifiStatus));
         } else {
-            circleColor = Graphics.COLOR_RED;
+            _view.startFailureTimer("Failed at GPS");
         }
     }
 
     public function onWifiCallback(result as {:wifiAvailable as Boolean, :errorCode as Communications.WifiConnectionStatus}) as Void{
         if (result[:wifiAvailable]) {
-            self.makeRequest();
+            // Success callback
+            _view.stopWifiTimer();
+            _view.successCallback("Wifi Detected", method(:makeRequest));
+        } else {
+            _view.startFailureTimer("Failed at Wifi");
         }
     }
 
@@ -40,7 +59,7 @@ class CommunicationsController {
     }
 
      //! Make the web request
-    private function makeRequest() as Void {
+    public function makeRequest() as Void {
         var url = "https://prayer-api-kappa.vercel.app/praytime";
         var params = {
             "lat" => lat,
@@ -81,11 +100,11 @@ class CommunicationsController {
                 self.updateLabel(labelKeys[3], data["maghrib"]);
                 self.updateLabel(labelKeys[4], data["isha"]);
             }
+            _view.successCallback("Times Updated", method(:returnToMenu));
             
             // Update view
         } else {
             // Update view
-            circleColor = Graphics.COLOR_DK_RED;
             System.println("failure: " + responseCode);
         }
     }
@@ -96,6 +115,10 @@ class CommunicationsController {
             storageManager.updateValue(key, updateValue);
             WatchUi.requestUpdate();
         }
+    }
+
+    function returnToMenu() as Void {
+        WatchUi.popView(WatchUi.SLIDE_DOWN);
     }
 
 }

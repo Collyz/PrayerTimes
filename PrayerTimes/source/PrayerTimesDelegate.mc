@@ -49,11 +49,6 @@ class SettingsCustomMenuItem extends WatchUi.CustomMenuItem {
         if (isFocused()) {
             font = Graphics.FONT_MEDIUM;
         }
-        if (isSelected()) {
-            dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_DK_BLUE);
-            dc.clear();
-        }
-        
         dc.setColor(_textColor, Graphics.COLOR_TRANSPARENT);
         dc.drawText(textX, textY, font, _text, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }

@@ -27,10 +27,9 @@ class PrayerTimesView extends WatchUi.View {
         drawTitle(dc);
         drawTitleGraphic(dc);
         drawLabels(dc);
-        drawCircle(dc, circleColor);
         
         
-        // View.onUpdate(dc); CALL IF USING layout.xml
+        // View.onUpdate(dc);  CALL IF USING layout.xml
     }
 
     function onHide() as Void {
