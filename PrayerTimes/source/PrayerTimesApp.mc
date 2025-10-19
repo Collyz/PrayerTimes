@@ -29,6 +29,7 @@ class PrayerTimesApp extends Application.AppBase {
     }
     
     public function cleanUp(info as Info) as Void {
+        
     }
     
 

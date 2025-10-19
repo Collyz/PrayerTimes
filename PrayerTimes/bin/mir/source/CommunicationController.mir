@@ -108,6 +108,25 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Communica
         symbol [ onPosition %tmp.17 28 74 84 const ];
         %tmp.18 = invoke %tmp.14 %tmp.15(%tmp.17);
         invoke %tmp.10 %tmp.11(%tmp.13, %tmp.18);
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 29 8 ]
+        symbol [ _view %tmp.20 29 8 13 ];
+        %tmp.20 = getv ? :_view;
+        symbol [ stopGPSTimer %tmp.21 29 14 26 ];
+        %tmp.21 = getv function %tmp.20 :stopGPSTimer;
+        invoke %tmp.20 %tmp.21();
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc" 30 8 ]
+        symbol [ _view %tmp.23 30 8 13 ];
+        %tmp.23 = getv ? :_view;
+        symbol [ successCallback %tmp.24 30 14 29 ];
+        %tmp.24 = getv function %tmp.23 :successCallback;
+        %tmp.25 = "GPS Success";
+        %tmp.26 = self;
+        symbol [ method %tmp.27 30 45 51 ];
+        %tmp.27 = getv function %tmp.26 :method;
+        %tmp.29 = const :checkWifiStatus;
+        symbol [ checkWifiStatus %tmp.29 30 53 68 const ];
+        %tmp.30 = invoke %tmp.26 %tmp.27(%tmp.29);
+        invoke %tmp.23 %tmp.24(%tmp.25, %tmp.30);
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_CommunicationController_mc_23_58_31_4_stop:
     }
     [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\CommunicationController.mc"; @line = 33; @symbol_functiondef = [onPosition,33,20,30]; @symbol_param<0> = [info,33,31,35]; @symbol_param<0>_type<0> = [Info,33,39,43]; ]

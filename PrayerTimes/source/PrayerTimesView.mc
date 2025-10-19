@@ -6,6 +6,8 @@ import Rez.Styles;
 
 class PrayerTimesView extends WatchUi.View {
 
+    var count = 0;
+
     function initialize() {
         View.initialize();
     }
@@ -20,6 +22,8 @@ class PrayerTimesView extends WatchUi.View {
     }
 
     function onUpdate(dc as Dc) as Void {
+        count += 1;
+        System.println(count);
         dc.clear();
         dc.clearClip();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
@@ -71,13 +75,12 @@ class PrayerTimesView extends WatchUi.View {
             dc.drawText(width, height + (hInc * i), Graphics.FONT_SMALL, setText ,Graphics.TEXT_JUSTIFY_LEFT);
             // label.setText(prayerText + ": " + timeText);
         }
-        WatchUi.requestUpdate();
     }
 
-    function drawCircle(dc as Dc, color as Graphics.ColorType) {
-        dc.setColor(color, Graphics.COLOR_BLACK);
-        dc.fillCircle(305, 70, 5);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-    }
+    // function drawCircle(dc as Dc, color as Graphics.ColorType) {
+    //     dc.setColor(color, Graphics.COLOR_BLACK);
+    //     dc.fillCircle(305, 70, 5);
+    //     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+    // }
 
 }

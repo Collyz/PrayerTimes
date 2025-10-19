@@ -21,12 +21,12 @@ class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
             System.println("Clicked on: " + id.toString());
         } else if (id == :set12) {
             System.println("Clicked on: " + id.toString());
-        } else if (id == :cearTimes) {
+        } else if (id == :clearTimes) {
             System.println("Clicked on: " + id.toString());
         }
     }
 
     function onBack() as Void {
-        WatchUi.popView(WatchUi.SLIDE_UP);
+        WatchUi.popView(WatchUi.SLIDE_DOWN);
     }
 }

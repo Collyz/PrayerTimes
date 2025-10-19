@@ -144,12 +144,12 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsM
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_24_15_26_8_if_stmt:
         %tmp.45 = lgetv %id.1;
         symbol [ id %tmp.45 24 19 21 ];
-        %tmp.47 = const :cearTimes;
-        symbol [ cearTimes %tmp.47 24 26 35 const ];
+        %tmp.47 = const :clearTimes;
+        symbol [ clearTimes %tmp.47 24 26 36 const ];
         %tmp.48 = eq %tmp.45 %tmp.47;
         bf %tmp.48 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_24_15_26_8_if_end;
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_24_15_26_8_if_true:
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_24_37_26_8_start:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_24_38_26_8_start:
 [ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\SettingsMenuDelegate.mc" 25 12 ]
         symbol [ System %tmp.49 25 12 18 ];
         %tmp.49 = getm $.Toybox.System;
@@ -163,7 +163,7 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsM
         %tmp.54 = invoke %tmp.52 %tmp.53();
         %tmp.55 = add %tmp.51 %tmp.54;
         invoke %tmp.49 %tmp.50(%tmp.55);
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_24_37_26_8_stop:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_24_38_26_8_stop:
         goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_24_15_26_8_if_end;
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_24_15_26_8_if_end:
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_22_15_26_8_if_end:
@@ -181,8 +181,8 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsM
         %tmp.2 = getv function %tmp.1 :popView;
         symbol [ WatchUi %tmp.3 30 24 31 ];
         %tmp.3 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_UP %tmp.4 30 32 40 ];
-        %tmp.4 = getv %tmp.3 :SLIDE_UP;
+        symbol [ SLIDE_DOWN %tmp.4 30 32 42 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
         invoke %tmp.1 %tmp.2(%tmp.4);
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_SettingsMenuDelegate_mc_29_30_31_4_stop:
     }

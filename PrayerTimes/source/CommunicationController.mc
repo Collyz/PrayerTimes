@@ -26,8 +26,8 @@ class CommunicationsController {
         _view.startGPSTimer();
 
         Position.enableLocationEvents(Position.LOCATION_ONE_SHOT, method(:onPosition));
-        // _view.stopGPSTimer();
-        // _view.successCallback("GPS Success", method(:checkWifiStatus));
+        _view.stopGPSTimer();
+        _view.successCallback("GPS Success", method(:checkWifiStatus));
     }
 
     public function onPosition(info as Info) as Void {  
