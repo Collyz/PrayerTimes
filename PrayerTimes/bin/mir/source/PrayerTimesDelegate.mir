@@ -173,10 +173,8 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_PrayerTim
         symbol [ SettingsMenuDelegate %tmp.100 21 45 65 ];
         %tmp.100 = getv %tmp.99 :SettingsMenuDelegate;
         %tmp.96 = newc %tmp.100 ();
-        symbol [ WatchUi %tmp.101 21 69 76 ];
-        %tmp.101 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_UP %tmp.102 21 77 85 ];
-        %tmp.102 = getv %tmp.101 :SLIDE_UP;
+        symbol [ SLIDE_UP %tmp.102 21 69 77 ];
+        %tmp.102 = getv ? :SLIDE_UP;
         invoke %tmp.93 %tmp.94(%tmp.95, %tmp.96, %tmp.102);
 [ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\PrayerTimesDelegate.mc" 22 8 ]
         %tmp.103 = true;

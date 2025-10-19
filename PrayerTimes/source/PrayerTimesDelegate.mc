@@ -18,7 +18,7 @@ class PrayerTimesDelegate extends WatchUi.BehaviorDelegate {
         settingsMenu.addItem(new $.SettingsCustomMenuItem(:set24, Rez.Strings.Set24,  Graphics.COLOR_WHITE));
         settingsMenu.addItem(new $.SettingsCustomMenuItem(:set12, Rez.Strings.Set12,  Graphics.COLOR_WHITE));
         settingsMenu.addItem(new $.SettingsCustomMenuItem(:clearTimes, Rez.Strings.ClearTimes, Graphics.COLOR_WHITE));
-        WatchUi.pushView(settingsMenu, new $.SettingsMenuDelegate(), WatchUi.SLIDE_UP);
+        WatchUi.pushView(settingsMenu, new $.SettingsMenuDelegate(), SLIDE_UP);
         return true;
     }
 

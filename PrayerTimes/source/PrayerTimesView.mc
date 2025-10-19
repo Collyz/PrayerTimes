@@ -6,6 +6,11 @@ import Rez.Styles;
 
 class PrayerTimesView extends WatchUi.View {
 
+    private var _font = Graphics.FONT_SYSTEM_TINY;
+    private var _just = Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER;
+    private var _addSpace = 40;
+    private var _timesSpacer = "·";
+
     function initialize() {
         View.initialize();
     }
@@ -20,6 +25,12 @@ class PrayerTimesView extends WatchUi.View {
     }
 
     function onUpdate(dc as Dc) as Void {
+        // System.println(dc.getTextWidthInPixels(" ", _font));
+        // System.println((dc.getTextWidthInPixels("Maghrib", _font) - dc.getTextWidthInPixels("Fajr", _font)) % 8);
+        // System.println((dc.getTextWidthInPixels("Maghrib", _font) - dc.getTextWidthInPixels("Dhuhr", _font)) % 8);
+        // System.println((dc.getTextWidthInPixels("Maghrib", _font) - dc.getTextWidthInPixels("Asr", _font)) % 8);
+        // System.println((dc.getTextWidthInPixels("Maghrib", _font) - dc.getTextWidthInPixels("Isha", _font)) % 8);
+        
         dc.clear();
         dc.clearClip();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
@@ -48,7 +59,7 @@ class PrayerTimesView extends WatchUi.View {
         var x = dc.getWidth() * .2;
         var y = dc.getHeight() * .15;
         var text = WatchUi.loadResource(Rez.Strings.AppName);
-        dc.drawText(x, y , Graphics.FONT_SMALL, text ,Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(x, y , Graphics.FONT_SYSTEM_SMALL, text ,Graphics.TEXT_JUSTIFY_LEFT);
     }
 
     function drawTitleGraphic(dc as Dc) as Void{
@@ -60,18 +71,27 @@ class PrayerTimesView extends WatchUi.View {
 
     // Draw all labels 
     function drawLabels(dc as Dc) as Void {
-        var width = dc.getWidth()/5;
-        var height = dc.getHeight() * .32;
-        var hInc = dc.getHeight() * .12;
+        var prayerNameX = dc.getWidth() / 5.4;
+        var prayerNameY = dc.getHeight() * .37;
+        var hInc = dc.getHeight() * .11;
+        var timeX = prayerNameX + dc.getTextWidthInPixels("Maghrib", _font) + _addSpace;
+
         for (var i = 0; i < labelKeys.size(); i++) {
             var prayerText = labelKeys[i];
+            var calcY = prayerNameY + (hInc * i);
             var timeText = storageManager.getValue(labelKeys[i]);
+            // For time formatting
+            var dashes = "";
+            var dashesNum = (dc.getTextWidthInPixels("Maghrib", _font) + _addSpace - dc.getTextWidthInPixels(prayerText, _font)) / dc.getTextWidthInPixels(_timesSpacer, _font);
+            for (var j = 0; j < dashesNum; j++) {
+                dashes += _timesSpacer;
+            }
             if (timeText.compareTo(default_time) != 0 && storageManager.getValue(formatAsHour12Key)) {
                 timeText = self.to12Hour(timeText);
             }
-            var setText = prayerText + ": " + timeText;
-            dc.drawText(width, height + (hInc * i), Graphics.FONT_TINY, setText ,Graphics.TEXT_JUSTIFY_LEFT);
-            // label.setText(prayerText + ": " + timeText);
+            var setText = prayerText + dashes;
+            dc.drawText(prayerNameX, calcY, _font, setText, _just);
+            dc.drawText(timeX, calcY, _font, timeText, _just);
         }
     }
     
@@ -88,7 +108,11 @@ class PrayerTimesView extends WatchUi.View {
             result = ":" + minutes + pm;
         }
         hour = 1 + (hour + 11) % 12;
-        result = hour + result;
+        var hourStr = hour.toString();
+        if (hour < 10) {
+            hourStr = "0" + hourStr;
+        }
+        result = hourStr + result;
 
         return result;
     }
