@@ -78,14 +78,14 @@ class CommunicationsController {
             }
         };
 
-        var settings = System.getDeviceSettings();
-        var cinfo = settings.connectionInfo;
-        if (cinfo instanceof Dictionary) {
-            var keys = cinfo.keys();
-            for (var i = 0 ; i < keys.size(); i++) {
-                System.println(keys[i].toString() + ": " + cinfo[keys[i]].state);
-            }
-        }
+        // var settings = System.getDeviceSettings();
+        // var cinfo = settings.connectionInfo;
+        // if (cinfo instanceof Dictionary) {
+        //     var keys = cinfo.keys();
+        //     for (var i = 0 ; i < keys.size(); i++) {
+        //         System.println(keys[i].toString() + ": " + cinfo[keys[i]].state);
+        //     }
+        // }
         
         Communications.makeWebRequest(
             url,

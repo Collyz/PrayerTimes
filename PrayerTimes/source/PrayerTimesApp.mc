@@ -4,11 +4,9 @@ import Toybox.Lang;
 import Toybox.Position;
 import Toybox.WatchUi;
 
-public var lat = 0.0;
-public var lon = 0.0;
-public var hasGPS = false as Boolean;
+public var lat = 39.353007;
+public var lon = -74.463422;
 public var storageManager = new StorageManager();
-public var labelKeys as Array<String> = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
 
 class PrayerTimesApp extends Application.AppBase {
 

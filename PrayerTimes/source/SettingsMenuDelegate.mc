@@ -16,16 +16,16 @@ class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
             var loadingView = new LoadingView();
             WatchUi.pushView(loadingView, null, SLIDE_UP);
             commsController.checkGPS(loadingView);
-            // System.println("Clicked on: " + id.toString());
         } else if (id == :set24) {
-            System.println("Clicked on: " + id.toString());
+            storageManager.updateValue(formatAsHour12Key, false);
         } else if (id == :set12) {
-            System.println("Clicked on: " + id.toString());
+            storageManager.updateValue(formatAsHour12Key, true);
         } else if (id == :clearTimes) {
             var loadingView = new LoadingView();
+            storageManager.clearTimes(labelKeys);
             WatchUi.pushView(loadingView, null, SLIDE_UP);
             loadingView.successCallback("Times Cleared", new Method(loadingView, :returnToMenu));
-            storageManager.clearTimes(labelKeys);
+            
         }
     }
 

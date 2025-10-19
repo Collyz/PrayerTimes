@@ -6,8 +6,6 @@ import Rez.Styles;
 
 class PrayerTimesView extends WatchUi.View {
 
-    var count = 0;
-
     function initialize() {
         View.initialize();
     }
@@ -22,8 +20,6 @@ class PrayerTimesView extends WatchUi.View {
     }
 
     function onUpdate(dc as Dc) as Void {
-        count += 1;
-        System.println(count);
         dc.clear();
         dc.clearClip();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
@@ -68,15 +64,34 @@ class PrayerTimesView extends WatchUi.View {
         var height = dc.getHeight() * .32;
         var hInc = dc.getHeight() * .12;
         for (var i = 0; i < labelKeys.size(); i++) {
-            // var label = labels[i];
             var prayerText = labelKeys[i];
             var timeText = storageManager.getValue(labelKeys[i]);
+            if (timeText.compareTo(default_time) != 0 && storageManager.getValue(formatAsHour12Key)) {
+                timeText = self.to12Hour(timeText);
+            }
             var setText = prayerText + ": " + timeText;
-            dc.drawText(width, height + (hInc * i), Graphics.FONT_SMALL, setText ,Graphics.TEXT_JUSTIFY_LEFT);
+            dc.drawText(width, height + (hInc * i), Graphics.FONT_TINY, setText ,Graphics.TEXT_JUSTIFY_LEFT);
             // label.setText(prayerText + ": " + timeText);
         }
     }
+    
+    function to12Hour(timeStr as String) as String {
+        var result = "";
+        var am = " AM";
+        var pm = " PM";
+        var charArr = timeStr.toCharArray();
+        var hour = (charArr[0] + charArr[1]).toNumber();
+        var minutes = (charArr[3] + charArr[4]);
+        if (hour < 12) {
+            result = ":" + minutes + am;
+        } else if (hour >= 12){
+            result = ":" + minutes + pm;
+        }
+        hour = 1 + (hour + 11) % 12;
+        result = hour + result;
 
+        return result;
+    }
     // function drawCircle(dc as Dc, color as Graphics.ColorType) {
     //     dc.setColor(color, Graphics.COLOR_BLACK);
     //     dc.fillCircle(305, 70, 5);
