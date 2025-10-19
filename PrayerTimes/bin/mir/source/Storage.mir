@@ -189,6 +189,77 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_m
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_34_8_36_8_if_end:
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_33_65_37_4_stop:
     }
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\Storage.mc"; @line = 39; @symbol_functiondef = [clearTimes,39,13,23]; @symbol_param<0> = [keys,39,24,28]; @symbol_param<0>_type<0> = [Array,39,32,37]; @symbol_param<0>_type<1> = [String,39,38,44]; ]
+    function clearTimes(keys as Array<String>) as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_39_55_46_4_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\Storage.mc" 40 8 ]
+        for @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_test @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_incr @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_init:
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_begin" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 40 17 18 ];
+        %tmp.1 = 0;
+        lputv %i.1 %tmp.1;
+        symbol [ i %i.1 40 17 18 ];
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_test:
+        %tmp.2 = lgetv %i.1;
+        symbol [ i %tmp.2 40 24 25 ];
+        %tmp.3 = lgetv %keys;
+        symbol [ keys %tmp.3 40 28 32 ];
+        symbol [ size %tmp.4 40 33 37 ];
+        %tmp.4 = getv function %tmp.3 :size;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = lt %tmp.2 %tmp.5;
+        bf %tmp.6 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_begin:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_46_45_8_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\Storage.mc" 41 12 ]
+        [ "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_46_45_8_start" "C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_46_45_8_stop" ]
+        %key.2 = local;
+        symbol [ key %key.2 41 16 19 ];
+        %tmp.7 = lgetv %keys;
+        symbol [ keys %tmp.7 41 22 26 ];
+        %tmp.8 = lgetv %i.1;
+        symbol [ i %tmp.8 41 27 28 ];
+        %tmp.9 = agetv %tmp.7 %tmp.8;
+        lputv %key.2 %tmp.9;
+        symbol [ key %key.2 41 16 19 ];
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\Storage.mc" 42 12 ]
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_42_12_44_12_if_stmt:
+        %tmp.10 = self;
+        symbol [ keyExists %tmp.11 42 16 25 ];
+        %tmp.11 = getv function %tmp.10 :keyExists;
+        %tmp.12 = lgetv %key.2;
+        symbol [ key %tmp.12 42 26 29 ];
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        bf %tmp.13 @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_42_12_44_12_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_42_12_44_12_if_true:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_42_32_44_12_start:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\Storage.mc" 43 16 ]
+        symbol [ Storage %tmp.14 43 16 23 ];
+        %tmp.14 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.15 43 24 32 ];
+        %tmp.15 = getv function %tmp.14 :setValue;
+        %tmp.16 = lgetv %key.2;
+        symbol [ key %tmp.16 43 33 36 ];
+        symbol [ _default_time %tmp.18 43 38 51 ];
+        %tmp.18 = getv ? :_default_time;
+        invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_42_32_44_12_stop:
+        goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_42_12_44_12_if_end;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_42_12_44_12_if_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_46_45_8_stop:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_incr:
+[ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\Storage.mc" 40 ]
+        %tmp.21 = lgetv %i.1;
+        symbol [ i %tmp.21 40 41 42 ];
+        %tmp.22 = add %tmp.21 1;
+        lputv %i.1 %tmp.22;
+        symbol [ i %i.1 40 41 42 ];
+        goto @C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_test;
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_40_8_45_8_for_end:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_Storage_mc_39_55_46_4_stop:
+    }
 }
 [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\Storage.mc"; @line = 1; ]
 <init> {

@@ -36,4 +36,13 @@ class StorageManager {
         }
     }
 
+    function clearTimes(keys as Array<String>) as Void {
+        for (var i = 0; i < keys.size(); i++) {
+            var key = keys[i];
+            if (keyExists(key)) {
+                Storage.setValue(key, _default_time);
+            }
+        }
+    }
+
 }

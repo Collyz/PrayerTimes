@@ -574,8 +574,8 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_LoadingVi
         %tmp.16 = self;
         symbol [ method %tmp.17 121 27 33 ];
         %tmp.17 = getv function %tmp.16 :method;
-        %tmp.19 = const :returnToMenu1;
-        symbol [ returnToMenu1 %tmp.19 121 35 48 const ];
+        %tmp.19 = const :returnToMenu;
+        symbol [ returnToMenu %tmp.19 121 35 47 const ];
         %tmp.20 = invoke %tmp.16 %tmp.17(%tmp.19);
         %tmp.21 = 1500;
         %tmp.22 = false;
@@ -625,9 +625,9 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_LoadingVi
         invoke %tmp.12 %tmp.13(%tmp.14, %tmp.15, %tmp.16);
 C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_LoadingView_mc_125_106_133_4_stop:
     }
-    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\LoadingView.mc"; @line = 135; @symbol_functiondef = [returnToMenu1,135,13,26]; ]
-    function returnToMenu1() as Void {
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_LoadingView_mc_135_37_137_4_start:
+    [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\LoadingView.mc"; @line = 135; @symbol_functiondef = [returnToMenu,135,13,25]; ]
+    function returnToMenu() as Void {
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_LoadingView_mc_135_36_137_4_start:
 [ "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\LoadingView.mc" 136 8 ]
         symbol [ WatchUi %tmp.1 136 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
@@ -638,7 +638,7 @@ C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_LoadingVi
         symbol [ SLIDE_DOWN %tmp.4 136 32 42 ];
         %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
         invoke %tmp.1 %tmp.2(%tmp.4);
-C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_LoadingView_mc_135_37_137_4_stop:
+C__Users_Safin_Documents_PrayerTimesApp_PrayerTimes_PrayerTimes_source_LoadingView_mc_135_36_137_4_stop:
     }
     [ @file = "C:\Users\Safin\Documents\PrayerTimesApp\PrayerTimes\PrayerTimes\source\LoadingView.mc"; @line = 139; @symbol_functiondef = [successColors,139,13,26]; ]
     function successColors() as Void {

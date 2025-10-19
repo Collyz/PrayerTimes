@@ -22,7 +22,10 @@ class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
         } else if (id == :set12) {
             System.println("Clicked on: " + id.toString());
         } else if (id == :clearTimes) {
-            System.println("Clicked on: " + id.toString());
+            var loadingView = new LoadingView();
+            WatchUi.pushView(loadingView, null, SLIDE_UP);
+            loadingView.successCallback("Times Cleared", new Method(loadingView, :returnToMenu));
+            storageManager.clearTimes(labelKeys);
         }
     }
 

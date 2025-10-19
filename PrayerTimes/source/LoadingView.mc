@@ -118,7 +118,7 @@ class LoadingView extends WatchUi.View {
         requestUpdate();
 
         var failureTimer = new Timer.Timer();
-        failureTimer.start(method(:returnToMenu1), 1500, false);
+        failureTimer.start(method(:returnToMenu), 1500, false);
         
     }
 
@@ -132,7 +132,7 @@ class LoadingView extends WatchUi.View {
         
     }
 
-    function returnToMenu1() as Void {
+    function returnToMenu() as Void {
         WatchUi.popView(WatchUi.SLIDE_DOWN);
     }
 
